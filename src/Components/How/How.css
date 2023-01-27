@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+.How{
+    width: 100%;
+    height: 100vh;
+}
+.How-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.How-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+.how-img-holder{
+    background: #9EBCEA;
+}
+.how-h{
+    color: #9EBCEA;
+    font-weight: 800;
+font-size: 96px;
+}
+.how-sign{
+    color: #1B75BC;
+}
+.how-p{
+font-size: medium;
+}

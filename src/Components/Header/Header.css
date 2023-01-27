@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+.Head-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    flex-wrap: wrap; 
+}
+.head-img{
+    width: 130px;
+    height: 130px;
+}
+.head-links{
+    margin: 10px;
+    color: #1B75BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-log-button{
+    background: transparent;
+    border: 2px solid #1B75BC;
+    border-radius: 8px;
+    color: #1B75BC;
+    width: 70px;
+    margin-right: 10px;
+    font-size: small;
+    font-weight: 600;
+    height: 32px;
+}
+.head-sign-button{
+    background:  #1B75BC;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 70px;
+    font-size: small;
+    font-weight: 600;
+    height: 32px;
+}
+.line{
+    background-color: #1B75BC;
+    height: 6px;
+}
