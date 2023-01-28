@@ -22,6 +22,11 @@
 }
 .how-img-holder{
     background: #9EBCEA;
+    width: 320px;
+    height: 320px;
+}
+.how-img{
+    width: 100%;
 }
 .how-h{
     color: #9EBCEA;
@@ -33,4 +38,9 @@ font-size: 96px;
 }
 .how-p{
 font-size: medium;
+}
+@media screen and (max-width: 767px) {
+    .how-img-holder{
+       display: none;
+    }
 }

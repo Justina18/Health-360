@@ -54,3 +54,9 @@ font-weight: 600;
 color: #1B75BC;
 margin-top: 40px;
 }
+@media screen and (max-width: 767px) {
+    .are-img-wrap{
+        width: 370px;
+        height: 311px
+    }
+}

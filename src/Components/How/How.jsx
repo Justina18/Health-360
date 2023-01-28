@@ -42,7 +42,7 @@ const How = () => {
             </div>
             </div>
             <div className='how-img-holder'>
-                <img src='/How.png' />
+                <img className='how-img' src='/How.png' />
             </div>
         </div>
     </div>
