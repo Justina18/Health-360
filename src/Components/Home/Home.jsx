@@ -28,7 +28,7 @@ const Home = () => {
               </button>
               </div>
               </div>
-              <img src='/home.png' />
+              <img className='land-img' src='/home.png' />
         </div>
         <How/>
         <Are/>

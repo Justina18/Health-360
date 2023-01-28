@@ -55,13 +55,15 @@ margin-left: 40px;
     margin-top: 60px;
     margin-left: 20px;
 }
-.land-img{
-    width: 600px;
-    height: 531px;
-}
+
 .land-foot{
     height:90px;
     width: 1327px;
     background: #1B75BC;
-
+}
+@media screen and (max-width: 767px) {
+    .land-img{
+        width: 400px;
+        height: 331px;
+    }
 }
