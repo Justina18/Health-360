@@ -1,7 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Header.css'
+import {FiAlignJustify} from 'react-icons/fi';
+import {FaTimes} from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate()
+  const [toggle, setToggle] = useState(true);
+
+  const handleToggle = () => { setToggle(!toggle) }
+  const FiAlignJustif = (<FiAlignJustify fontSize={25} color="#1B75BC" onClick={handleToggle} />)
+  const FaTime = (<div>
+      <FaTimes fontSize={25} color="#D9D9D9" onClick={handleToggle} />
+                </div>)
+
   return (
     <div className='Header'>
         <div className='Head-wrap'>
@@ -15,10 +27,14 @@ const Header = () => {
                 <h5 className='head-links'>Contact</h5>
                 <h5 className='head-links'>Dashboard</h5>
              </div>
+            
              <div>
               <button className='head-log-button'>Log In</button>
-                <button className='head-sign-button'>Sign Up</button>
+                <button className='head-sign-button' onClick={()=> navigate('/sign up')}>Sign Up</button>
              </div>
+              <div className='Burger'>
+                    {toggle ? FiAlignJustif : FaTime}
+                </div>
         </div>
         <hr className='line'/>
     </div>

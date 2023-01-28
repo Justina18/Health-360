@@ -47,3 +47,18 @@
     background-color: #1B75BC;
     height: 6px;
 }
+.Burger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .head-links{
+      display: none;
+    }
+    .Burger {
+      display: flex;
+    }
+    .Header-Toggle{
+      display: flex;
+    }
+  }

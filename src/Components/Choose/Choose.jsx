@@ -1,5 +1,6 @@
 import React from 'react'
 import './Choose.css'
+import {FaUserNurse,FaUserCircle} from 'react-icons/fa'
 
 const Choose = () => {
   return (

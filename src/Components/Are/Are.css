@@ -13,11 +13,13 @@
     width:100% ;
     background: #9EBCEA;
     color: white;
+  
 }
 .are-wrap{
     display: flex;
     justify-content: space-around;
     align-items: center;
+      flex-wrap: wrap;
 }
 .are-img-wrap{
     background: #1B75BC;
