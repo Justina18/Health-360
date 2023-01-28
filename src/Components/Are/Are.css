@@ -59,4 +59,13 @@ margin-top: 40px;
         width: 370px;
         height: 311px
     }
+    .are-h1{
+        margin-bottom: 0;
+    }
+    .are-text{
+        font-family: 'Poppins';
+    font-weight: 400;
+    font-size: large;
+        margin: 0;
+    }
 }
