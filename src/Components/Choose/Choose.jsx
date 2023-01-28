@@ -1,8 +1,13 @@
 import React from 'react'
 import './Choose.css'
 import {FaUserNurse,FaUserCircle} from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
+
 
 const Choose = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className='Choose'>
         <div className='Choose-wrap'>
@@ -15,8 +20,8 @@ const Choose = () => {
               <FaUserNurse fontSize={25} color="#1B75BC"/>
             For medical personnel
             </button>
-            <button  className='choose-button-user'>
-              <FaUserCircle fontSize={25} color="#1B75BC"/>
+            <button onClick={()=> navigate('/sign up')} className='choose-button-user'>
+              <FaUserCircle fontSize={25} color="#1B75BC"  />
             For Users
             </button>
             </div>
