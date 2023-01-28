@@ -218,7 +218,13 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-
+  }
+  .this{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .logh2{
     text-align: center;

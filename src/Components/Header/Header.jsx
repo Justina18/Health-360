@@ -25,7 +25,7 @@ const Header = () => {
                 <h5 className='head-links'>About</h5>
                 <h5 className='head-links'>Services</h5>
                 <h5 className='head-links'>Contact</h5>
-                <h5 className='head-links'>Dashboard</h5>
+                <h5 className='head-links' onClick={()=> navigate('/dashboard')}>Dashboard</h5>
              </div>
             
              <div>
