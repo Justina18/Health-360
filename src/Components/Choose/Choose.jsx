@@ -7,15 +7,16 @@ const Choose = () => {
     <div className='Choose'>
         <div className='Choose-wrap'>
             <div className='choose-text'>
-                <h1>Kindly Choose </h1>
-                <p>Who are you?</p>
+                <h1>Who are you? </h1>
+                <p>Kindly Choose</p>
             </div>
             <div className='choose-buttons'>
-            <button>
-
+            <button  className='choose-button-med'>
+              <FaUserNurse fontSize={25} color="#1B75BC"/>
             For medical personnel
             </button>
-            <button>
+            <button  className='choose-button-user'>
+              <FaUserCircle fontSize={25} color="#1B75BC"/>
             For Users
             </button>
             </div>

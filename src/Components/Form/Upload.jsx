@@ -1,10 +1,11 @@
 import React,{useState, useEffect} from 'react'
 import {FaUserCircle} from 'react-icons/fa'
+import {CiCircleRemove} from 'react-icons/ci'
 import './AllForm.css';
 import { useNavigate } from 'react-router-dom';
 
 const Upload = () => {
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState();
     const [image, setImage] =useState(null)
     const navigate = useNavigate();
 
@@ -14,20 +15,23 @@ const Upload = () => {
   
   return (
     <div className='upload'>
+      <div className='upload-wrap'>
         <h1>Upload and Display Image</h1>
       {selectedImage && (
         <div className='image-wrap'>
-       {image ? <FaUserCircle fontSize={200}/> : <img alt="not found"
+       <img alt="not found"
         className='img'
-        src={URL.createObjectURL(selectedImage)} />}
+        src={URL.createObjectURL(selectedImage)} />
         <br />
-        <button className='button' onClick={()=>setSelectedImage(null)}>Remove</button>
+        <div>
+        <button className='buttonss' onClick={()=>setSelectedImage(null)}><CiCircleRemove fontSize={25} color="red"/>Remove</button>
+        </div>
         </div>
       )}
       <br />
      
       <br />
-      <label className="custom-file-upload">
+      <label className="buttons">
       <input
         type="file"
         className='file'
@@ -36,9 +40,13 @@ const Upload = () => {
           setSelectedImage(event.target.files[0]);
         }}
       /> Choose File</label>
-      <button className='button' onClick={()=> navigate("/")}>
+      <button className='custom-file-upload' onClick={()=> navigate('/sign up')}>
         Go Back
       </button>
+      <button className="buttons" onClick={()=> navigate('/')}>
+        Finish!
+      </button>
+    </div>
     </div>
   )
 }

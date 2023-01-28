@@ -9,10 +9,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     width:100% ;
     background: white;
-    color: #1B75BC;
+    color: black;
 }
 .choose-buttons{
     display: flex;
@@ -25,4 +25,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+}
+.choose-button-med{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D9D9D9;
+    border: 1px solid #1B75BC;
+    height: 50px;
+    width: 320px;
+    margin-top: 15px;
+}
+
+.choose-button-user{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D9D9D9;
+    border: 1px solid #1B75BC;
+    height: 50px;
+    width: 320px;
+    margin-top: 15px;
 }

@@ -1,15 +1,16 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import Form from './Form';
 import './AllForm.css';
 import { useNavigate } from 'react-router-dom';
 
 const Inputs = () => {
 
+    const [isValid, setValid] = useState(false)
     const navigate = useNavigate()
     const [values, setValues] = useState({
         name: "",
         email: "",
-        address:"",
+        phone:"",
         password: "",
         confirmPassword: "",
       })
@@ -35,36 +36,41 @@ const Inputs = () => {
       },
       {
         id:3,
-        name:'address',
-        placeholder: 'Address',
-        type: 'address',
+        name:'phone',
+        placeholder: 'Phone Number',
+        type: 'tel',
         required: true,
-    
+        errMsg:'Must be a valid phone number',
+        pattern: "[0-9]{3}-[0-9]{2}-[0-9]{3}"
       },
-      {
-        id:4,
-        name:'password',
-        placeholder: 'Password',
-        type: 'password',
-        required: true,
-        errMsg:'There must be at least 8 characters. It must have a capital letter, a number, a special character and small letters',
-        pattern:`^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$%^&*-]).{8,}$`
-      },
-      {
-        id:5,
-        name:'password',
-        placeholder: 'Confirm Password',
-        type: 'password',
-        required: true,
-        errMsg:'Must match the password',
-        pattern: values.password
-      },
+      // {
+      //   id:4,
+      //   name:'password',
+      //   placeholder: 'Password',
+      //   type: 'password',
+      //   required: true,
+      //   errMsg:'There must be at least 8 characters. It must have a capital letter, a number, a special character and small letters',
+      //   pattern:`^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$%^&*-]).{8,}$`
+      // },
+      // {
+      //   id:5,
+      //   name:'password',
+      //   placeholder: 'Confirm Password',
+      //   type: 'password',
+      //   required: true,
+      //   errMsg:'Must match the password',
+      //   pattern: values.password
+      // },
     ];
     
     const handleChange= e =>{
       setValues({...values, [e.target.name]: e.target.values});
     }
-    
+     
+    const validate = () =>{
+      return inputs.length;
+    }
+
     const receivedValues =(e)=>{
       e.preventDefault()
       console.log(values)
@@ -77,15 +83,30 @@ const Inputs = () => {
           {inputs.map((i)=>
       <Form key={i.id} {...i} handleChange={handleChange} values={values[i.name]}/>
       )}
+       <div className='custom-select'>
+          <select>
+          <option value="" selected disabled hidden>Select a Gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </div>
+        <form  action="/action_page.php">
+            <label for="birthday"></label>
+            <input className='date' type="date" id="birthday" name="birthday"/>
+          </form>
             <div className='foot'>
               <div>
               <input type="checkbox" name="terms" id="terms" />
             <label className='label' for="terms">I have read and agreed to the <b className='b'> Terms and conditions</b></label>
             </div>
-            <button className='button' type='submit' onClick={()=> navigate("/upload")}>
+            <div>
+            <button className='back-button' onClick={()=> navigate("/")}>
+              Go Back
+            </button>
+            <button className='button' type='submit'onClick={()=> navigate("/upload")} disabled={!validate()} >
                 CREATE ACCOUNT
             </button>
-            
+            </div>
             <p className='p'>Already have an account? <b className='b'> Log In.</b></p>
             </div>
           </form>
