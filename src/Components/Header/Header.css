@@ -61,4 +61,10 @@
     .Header-Toggle{
       display: flex;
     }
+    .Head-wrap{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;  
+      flex-wrap: wrap; 
+  }
   }
