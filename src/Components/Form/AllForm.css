@@ -218,10 +218,6 @@
   }
   @media screen and (max-width: 767px) {
     .logSuccess{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
       width: 362px;
       height: 244px;
     }
