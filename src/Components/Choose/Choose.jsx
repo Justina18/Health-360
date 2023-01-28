@@ -17,7 +17,7 @@ const Choose = () => {
             </div>
             <div className='choose-buttons'>
             <button  className='choose-button-med'>
-              <FaUserNurse fontSize={25} color="#1B75BC"/>
+              <FaUserNurse onClick={()=> navigate('/log in')}  fontSize={25} color="#1B75BC"/>
             For medical personnel
             </button>
             <button onClick={()=> navigate('/sign up')} className='choose-button-user'>

@@ -107,7 +107,7 @@ const Inputs = () => {
                 CREATE ACCOUNT
             </button>
             </div>
-            <p className='p'>Already have an account? <b className='b'> Log In.</b></p>
+            <p className='p'>Already have an account? <b className='b'onClick={()=> navigate('/log in')} > Log In.</b></p>
             </div>
           </form>
     </div>

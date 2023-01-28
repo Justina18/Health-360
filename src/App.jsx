@@ -4,6 +4,8 @@ import Home from './Components/Home/Home'
 import './App.css'
 import Inputs from './Components/Form/Inputs'
 import Upload from './Components/Form/Upload'
+import LogIn from './Components/Form/LogIn'
+import LogSuccess from './Components/Form/LogSuccess'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
           <Route path="/" element={ <Home/> } />
           <Route path='/sign up' element={ <Inputs/> }/>
           <Route path='/upload' element={ <Upload/> }/>
+          <Route path='/log in' element={ <LogIn/> }/>
+          <Route path='/log in img' element={ <LogSuccess/> }/>
         </Routes>
       </Router>
     </div>
