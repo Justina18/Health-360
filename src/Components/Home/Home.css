@@ -107,6 +107,8 @@ margin-left: 40px;
     }
     .land-img-two-wrap{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .land-img-two{
         width: 315px;
