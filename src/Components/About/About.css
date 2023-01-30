@@ -100,6 +100,15 @@
         color: white;
         font-size: medium;
     }
+    .about-wrap{
+        height: 40vh;
+    }
+    .abt-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .abt-img{
         display:  none;
     }
