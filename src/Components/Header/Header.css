@@ -13,6 +13,7 @@
 .head-img{
     width: 90px;
     height: 70px;
+    cursor: pointer;
 }
 .head-links{
     margin: 10px;
