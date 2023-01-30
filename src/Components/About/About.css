@@ -95,11 +95,7 @@
 .miss-zig{
     display: none;
 }
-@media screen and (max-width: 767px) {
-    .abt-text{
-        color: white;
-        font-size: medium;
-    }
+@media screen and (max-width: 767px) {s
     .about-wrap{
         height: 30vh;
         display: flex;
@@ -108,6 +104,8 @@
         text-align: center;
     }
     .abt-text{
+        color: white;
+        font-size: medium;
         display: flex;
         justify-content: center;
         align-items: center;
