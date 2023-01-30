@@ -27,7 +27,11 @@ const About = () => {
                     </div>
                     <h1 className='miss-h1' >Our Mission</h1>
                     <br/>
-                    <h4>Health360's mission is to make quality healthcare accessible to every African with a smart device</h4>
+                    <div className='miss-zig'>
+                    <CgShapeZigzag fontSize={25}/>
+                    </div>
+                    <br/>
+                    <h4 className='miss-h4'>Health360's mission is to make quality healthcare accessible to every African with a smart device</h4>
                 </div>
             </div>
         </div>

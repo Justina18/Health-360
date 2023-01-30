@@ -92,3 +92,36 @@
     color: white;
     text-align: center;
 }
+.miss-zig{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .abt-text{
+        color: white;
+        font-size: medium;
+    }
+    .abt-img{
+        border-radius: 2px;
+    }
+    .miss-zig{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mission{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #44A1E4;
+        border-radius: 12px;
+        width: 250px;
+        height: 375px;
+    }
+    .mission-img-wrap{
+        display: none
+    }
+    .miss-h4{
+        font-weight: 500;
+    }
+}
