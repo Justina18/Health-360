@@ -142,4 +142,7 @@
     .miss-h4{
         font-weight: 500;
     }
+    .abt-img-wrap{
+        display: none;
+    }
 }
