@@ -72,7 +72,19 @@ margin-left: 40px;
     .home-prem-button{
         display: none;
     }
+    .home-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .home-book-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .home-butts{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

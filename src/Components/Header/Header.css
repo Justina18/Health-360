@@ -68,4 +68,10 @@
       align-items: center;  
       flex-wrap: wrap; 
   }
+  .head-sign-button{
+    display: none;
+  }
+  .head-log-button{
+    display: none;
+  }
   }
