@@ -77,7 +77,17 @@ margin-left: 40px;
     justify-content: center;
     align-items: center;
 }
-
+.home-book-button{
+    color: white;
+font-weight: 600;
+font-size: medium;
+outline: none;
+border: none;
+width: 170px;
+height: 45px;
+background: #1B75BC;
+border-radius: 10px;
+}
     .home-butts{
         display: flex;
         justify-content: center;
@@ -85,9 +95,9 @@ margin-left: 40px;
     }
 }
 .home-sign-button{
-    background:  #1B75BC;
+    background:  #9EBCEA;
     border: none;
-    color: white;
+    color: #1B75BC;
     border-radius: 8px;
     margin: 10px;
     width: 70px;

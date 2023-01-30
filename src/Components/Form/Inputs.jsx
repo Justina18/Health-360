@@ -43,24 +43,7 @@ const Inputs = () => {
         errMsg:'Must be a valid phone number',
         pattern: "[0-9]{3}-[0-9]{2}-[0-9]{3}"
       },
-      // {
-      //   id:4,
-      //   name:'password',
-      //   placeholder: 'Password',
-      //   type: 'password',
-      //   required: true,
-      //   errMsg:'There must be at least 8 characters. It must have a capital letter, a number, a special character and small letters',
-      //   pattern:`^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$%^&*-]).{8,}$`
-      // },
-      // {
-      //   id:5,
-      //   name:'password',
-      //   placeholder: 'Confirm Password',
-      //   type: 'password',
-      //   required: true,
-      //   errMsg:'Must match the password',
-      //   pattern: values.password
-      // },
+
     ];
     
     const handleChange= e =>{

@@ -4,8 +4,10 @@ import Choose from '../Choose/Choose';
 import Header from '../Header/Header';
 import How from '../How/How';
 import './Home.css'
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate()
   return (
     <div className='Home'>
         <Header/>
