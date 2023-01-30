@@ -43,7 +43,7 @@ const Upload = () => {
       <button className='custom-file-upload' onClick={()=> navigate('/comp')}>
         Go Back
       </button>
-      <button className="buttons" onClick={()=> navigate('/')}>
+      <button className="buttons" onClick={()=> navigate('/sign success')}>
         Finish!
       </button>
     </div>
