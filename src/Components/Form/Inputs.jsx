@@ -43,7 +43,7 @@ const Inputs = () => {
         errMsg:'Must be a valid phone number',
         pattern: "[0-9]{3}-[0-9]{2}-[0-9]{3}"
       },
-
+ 
     ];
     
     const handleChange= e =>{
