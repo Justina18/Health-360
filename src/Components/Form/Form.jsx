@@ -12,6 +12,7 @@ const Form = (props) => {
 const Visible = () => {
   setShowPassword(prevState => !prevState);
 };
+
 const [toggle, setToggle] = useState(true);
 const handleToggle = () => { setToggle(!toggle) }
   const openEye = (<AiOutlineEye fontSize={18} color="black" onClick={handleToggle} />)

@@ -55,6 +55,9 @@ margin-left: 40px;
     margin-top: 60px;
     margin-left: 20px;
 }
+.home-butts{
+    display: none;
+}
 
 .land-foot{
     height:90px;
@@ -65,5 +68,11 @@ margin-left: 40px;
     .land-img{
         width: 380px;
         height: 321px;
+    }
+    .home-prem-button{
+        display: none;
+    }
+    .home-butts{
+        display: flex;
     }
 }

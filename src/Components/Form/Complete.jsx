@@ -4,9 +4,12 @@ import './Form.jsx'
 import './AllForm.css'
 import Form from './Form.jsx';
 import {AiOutlineArrowLeft} from 'react-icons/ai'
+import { AiOutlineEye } from 'react-icons/ai';
+import {RiEyeCloseLine} from 'react-icons/ri';
 
 const Complete = () => {
     const navigate = useNavigate()
+    const [showPassword, setShowPassword] = useState(false);
     const [values, setValues] = useState({
         location:"",
         password: "",
@@ -56,7 +59,7 @@ const Complete = () => {
   return (
     <div className='apps'>
           <form onSubmit={receivedValues}>
-            <h1>Sign Up</h1>
+            <h1 className='comp-h1'>Complete Your Account</h1>
             <div className='custom-select'>
           <select>
           <option value="" selected disabled hidden>Specialty</option>
@@ -82,9 +85,18 @@ const Complete = () => {
             <option value="Urology">Urology</option>
           </select>
         </div>
-          {inputs.map((i)=>
-          <Form key={i.id} {...i} handleChange={handleChange} values={values[i.name]}/>
-      )}
+
+          {inputs.map((i)=> (
+            <div>
+          <Form key={i.id} {...i} handleChange={handleChange} values={values[i.name]} type={i.name === 'password' && !showPassword ? 'password' : 'text'}  />
+       
+          {inputs.name === 'password' && (
+            <div onClick={() => setShowPassword(!showPassword)} className="eye" >
+            {showPassword ? <RiEyeCloseLine/> :<AiOutlineEye/>  }
+          </div>
+          )}
+           </div>
+        ))}
       <label className='text-lab'>
         <input
         className='inp-text'

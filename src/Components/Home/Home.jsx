@@ -10,7 +10,7 @@ const Home = () => {
     <div className='Home'>
         <Header/>
         <div className='Home-wrap'>
-
+  <img className='land-img' src='/home.png' />
           <div className='home-text'>
             <h1 className='Home-h1'>
             All it takes is a <br/>
@@ -27,8 +27,12 @@ const Home = () => {
               Go Premium
               </button>
               </div>
+              <div className='home-butts'>
+              <button className='head-log-button '  onClick={()=> navigate('/log in')}>Log In</button>
+                <button className='head-sign-button' onClick={()=> navigate('/choice')}>Sign Up</button>
+             </div>
               </div>
-              <img className='land-img' src='/home.png' />
+            
         </div>
         <How/>
         <Are/>

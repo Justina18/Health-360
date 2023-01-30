@@ -81,7 +81,7 @@ const Inputs = () => {
           <form onSubmit={receivedValues}>
             <h1>Create an account</h1>
           {inputs.map((i)=>
-      <Form key={i.id} {...i} handleChange={handleChange} values={values[i.name]}/>
+      <Form key={i.id} {...i} handleChange={handleChange} values={values[i.name]} />
       )}
        <div className='custom-select'>
           <select>
