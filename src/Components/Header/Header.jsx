@@ -18,7 +18,7 @@ const Header = () => {
     <div className='Header'>
         <div className='Head-wrap'>
             <div>
-                <img className='head-img' src='/head-log.jpeg' />
+                <img onClick={()=> navigate('/')} className='head-img' src='/head-log.jpeg' />
              </div>
              <div className='head-links'>
                 <h5 className='head-links' >Home</h5>
