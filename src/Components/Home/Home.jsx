@@ -11,7 +11,6 @@ const Home = () => {
   const navigate = useNavigate()
   return (
     <div className='Home'>
-        <Header/>
         <div className='Home-wrap'>
           <div className='clip-wrap'>
             <div className='land-img-wrap'>
@@ -35,10 +34,10 @@ const Home = () => {
             The top medical experts are prepared to provide <br/> feedback on your problems.
             </p>
             <div className='home-buttons'>
-            <button  className='home-book-button'>
+            <button   onClick={()=> navigate('book')} className='home-book-button'>
                 Book Now
             </button>
-            <button className='home-prem-button'>
+            <button  onClick={()=> navigate('premium')}className='home-prem-button'>
               Go Premium
               </button>
               </div>
