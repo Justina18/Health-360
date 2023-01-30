@@ -13,11 +13,20 @@ const Home = () => {
     <div className='Home'>
         <Header/>
         <div className='Home-wrap'>
-  <img className='land-img' src='/home.png' />
+          <div className='clip-wrap'>
+            <div className='land-img-wrap'>
+              <img className='land-img' src='/home.png' />
+            </div>
+            
+              <div className='clip'></div>
+          </div>
+          <div className='land-img-two-wrap'>
+            <img className='land-img-two' src='/home.png' />
+          </div>
           <div className='home-text'>
             <h1 className='Home-h1'>
             All it takes is a <br/>
-         <b className='home-b'> consultation</b> with a doctor.
+            <b className='home-b'> consultation</b> with a doctor.
             </h1>
             <p className='home-p'>
             The top medical experts are prepared to provide <br/> feedback on your problems.
@@ -34,9 +43,10 @@ const Home = () => {
               <button className='home-log-button '  onClick={()=> navigate('/log in')}>Log In</button>
                 <button className='home-sign-button' onClick={()=> navigate('/choice')}>Sign Up</button>
              </div>
-              </div>
+          </div>
             
         </div>
+       
         <About/>
         <How/>
         <Are/>

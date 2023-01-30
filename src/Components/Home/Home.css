@@ -8,9 +8,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-   justify-content: space-around;
-    width: 100%;
-    height: 75vh;
+   justify-content: space-between;
+    height: 80vh;
 
 }
 .Home-h1{
@@ -59,13 +58,44 @@ margin-left: 40px;
     display: none;
 }
 
+.clip-wrap{
+    flex:1 ;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* position:relative ; */
+}
+.land-img-wrap{
+    position:absolute;
+    top: 150px;
+    z-index: 200;
+}
+.clip{
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    background-color: #9EBCEA;
+    clip-path: inset(0 0 0 0);
+    position: absolute;
+    top: 515px;
+    flex-wrap: wrap;
+    }
+.land-img-two-wrap{
+    display: none;
+}
 .land-foot{
     height:90px;
     width: 1327px;
     background: #1B75BC;
 }
 @media screen and (max-width: 767px) {
-    .land-img{
+    .land-img-wrap{
+        display: none;
+    }
+    .land-img-two-wrap{
+        display: flex;
+    }
+    .land-img-two{
         width: 380px;
         height: 321px;
     }
@@ -95,6 +125,9 @@ border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .clip{
+        display: none;
     }
 }
 .home-sign-button{
