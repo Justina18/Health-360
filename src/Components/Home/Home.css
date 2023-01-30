@@ -79,6 +79,19 @@ margin-left: 40px;
     position: absolute;
     top: 515px;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    .gsk{
+        width: 70px;
+        height: 70px;
+        margin-right: 60px;
+    }
+    .emzor{
+        width: 130px;
+        height: 70px;
+        margin-right: 160px;
     }
 .land-img-two-wrap{
     display: none;

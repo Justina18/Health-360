@@ -18,7 +18,10 @@ const Home = () => {
               <img className='land-img' src='/home.png' />
             </div>
             
-              <div className='clip'></div>
+              <div className='clip'>
+                <img className='gsk' src='/gsk.png' />
+                <img className='emzor' src='/emzor.png' />
+              </div>
           </div>
           <div className='land-img-two-wrap'>
             <img className='land-img-two' src='/home.png' />

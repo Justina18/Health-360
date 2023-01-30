@@ -48,7 +48,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='why-hold'>
-                    <GiTrophyCup fontSize={55}/>
+                    <GiTrophyCup color='#FDD13F' fontSize={55}/>
                     <h1 className='why-h1' >
                     Quality <br/> Healthcare<br/> Services
                     </h1>
@@ -59,7 +59,7 @@ const About = () => {
                 </div>
 
                 <div className='why-hold'>
-                    <FaAward fontSize={55}/>
+                    <FaAward color='#FDD13F' fontSize={55}/>
                     <h1 className='why-h1' >
                     High User <br/> Satisfaction
                     </h1>
@@ -72,7 +72,7 @@ const About = () => {
                 </div>
 
                 <div className='why-hold'>
-                <GiClockwork  fontSize={55}/>
+                <GiClockwork color='#FDD13F' fontSize={55}/>
                 <h1 className='why-h1' >
                 Round the  <br/> clock  <br/>  availability
                 </h1>
