@@ -30,7 +30,7 @@ const Header = () => {
             
              <div>
               <button className='head-log-button '  onClick={()=> navigate('/log in')}>Log In</button>
-                <button className='head-sign-button' onClick={()=> navigate('/sign up')}>Sign Up</button>
+                <button className='head-sign-button' onClick={()=> navigate('/choice')}>Sign Up</button>
              </div>
               <div className='Burger'>
                     {toggle ? FiAlignJustif : FaTime}

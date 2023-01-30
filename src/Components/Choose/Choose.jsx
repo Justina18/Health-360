@@ -16,8 +16,8 @@ const Choose = () => {
                 <p>Kindly Choose</p>
             </div>
             <div className='choose-buttons'>
-            <button  className='choose-button-med'>
-              <FaUserNurse onClick={()=> navigate('/log in')}  fontSize={25} color="#1B75BC"/>
+            <button  className='choose-button-med' onClick={()=> navigate('/sign up')} >
+              <FaUserNurse fontSize={25} color="#1B75BC"/>
             For medical personnel
             </button>
             <button onClick={()=> navigate('/sign up')} className='choose-button-user'>
@@ -25,7 +25,12 @@ const Choose = () => {
             For Users
             </button>
             </div>
+            <div className='chooseBack'>
+            <button className='chooseBackButt'  onClick={()=> navigate('/')}>
+              Go Back
+            </button>
         </div>
+    </div>
     </div>
   )
 }

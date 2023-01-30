@@ -32,7 +32,6 @@ const Home = () => {
         </div>
         <How/>
         <Are/>
-        <Choose/>
     </div>
   )
 }

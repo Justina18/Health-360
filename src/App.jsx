@@ -7,6 +7,9 @@ import Upload from './Components/Form/Upload'
 import LogIn from './Components/Form/LogIn'
 import LogSuccess from './Components/Form/LogSuccess'
 import Dashboard from './Dashboard/Dashboard'
+import Choose from './Components/Choose/Choose'
+import Complete from './Components/Form/Complete'
+import Forgot from './Components/Form/Forgot'
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
           <Route path='/log in' element={ <LogIn/> }/>
           <Route path='/log in img' element={ <LogSuccess/> }/>
           <Route path='/dashboard' element={ <Dashboard/> }/>
+          <Route path='/choice' element={ <Choose/> } />
+          <Route path='/comp' element={ <Complete/> }/>
+          <Route path='/forgot' element={ <Forgot/> }/>
         </Routes>
       </Router>
     </div>

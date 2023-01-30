@@ -21,6 +21,11 @@
     color: #1765A1;
     cursor: pointer;
   }
+  .log-b{
+    color: #1765A1;
+    cursor: pointer;
+    font-size: x-small;
+  }
   form{
     display: flex;
     justify-content: center;
@@ -34,6 +39,11 @@
   }
   .p{
     font-size: small;
+    margin-bottom: 12px;
+    color: black;
+  }
+  .log-p{
+    font-size: x-small;
     margin-bottom: 12px;
     color: black;
   }
@@ -112,7 +122,7 @@
     padding: 6px 12px;
     cursor: pointer;
     border-radius: 3px;
-    margin: 10px;
+    margin: 8px;
     border: 1px solid red;
     outline: none;
   }
@@ -120,10 +130,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
   }
-  
+  .forgot-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  .log-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   .inp:invalid[focus = "true"] ~ span{
     display: block;
   }
@@ -232,6 +254,35 @@
   .suc{
     color: #1765A1;
   }
+  .lab-but{
+    color: white;
+    background-color: #2991E0;
+    cursor: pointer;
+    padding: 3px 9px;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 600;
+    font-size: smaller;
+}
+.inp-text{
+  display: none;
+}
+.text-lab{
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: small;
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0px 2px 14px 5px rgba(213,225,250,0.75);
+  -webkit-box-shadow: 0px 2px 14px 5px rgba(213,225,250,0.75);
+  -moz-box-shadow: 0px 2px 14px 5px rgba(213,225,250,0.75);
+}
   @media screen and (max-width: 767px) {
     .logSuccess-img{
       width: 362px;

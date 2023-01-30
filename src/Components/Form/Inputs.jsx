@@ -100,11 +100,11 @@ const Inputs = () => {
             <label className='label' for="terms">I have read and agreed to the <b className='b'> Terms and conditions</b></label>
             </div>
             <div>
-            <button className='back-button' onClick={()=> navigate("/")}>
+            <button className='back-button' onClick={()=> navigate('/choice')}>
               Go Back
             </button>
-            <button className='button' type='submit'onClick={()=> navigate("/upload")} disabled={!validate()} >
-                CREATE ACCOUNT
+            <button className='button' type='submit' onClick={()=> navigate('/comp')} disabled={!validate()} >
+                CONTINUE
             </button>
             </div>
             <p className='p'>Already have an account? <b className='b'onClick={()=> navigate('/log in')} > Log In.</b></p>

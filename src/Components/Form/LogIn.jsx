@@ -8,7 +8,7 @@ const LogIn = () => {
 
     const navigate = useNavigate()
     const [values, setValues] = useState({
-        specialty: "",
+      username: "",
         proof: "",
         location:"",
         practice: "",
@@ -18,8 +18,8 @@ const LogIn = () => {
       const inputs=[
         {
         id:1,
-        name:'specialty',
-        placeholder: 'Name',
+        name:'username',
+        placeholder: 'User Name',
         type: 'text',
         required: true,
         errMsg:'All characters must be letters. There should be at least 3 characters ',
@@ -60,16 +60,18 @@ const LogIn = () => {
     <div className='apps'>
        <form onSubmit={receivedValues}>
             <h1>Log In</h1>
+            <p>*All fields are compulsory</p>
           {inputs.map((i)=>
       <Form key={i.id} {...i} handleChange={handleChange} values={values[i.name]}/>
       )}
-            <div className='foot'>
+            <div className='log-foot'>
               
             <button className='button' type='submit' onClick={()=> navigate('/log in img')}>
                 Log In
             </button>
             
             <p className='p'>Don't have an account? <b onClick={()=> navigate('/sign up')} className='b'> Sign Up.</b></p>
+            <p className='log-p'>Forgot password? <b onClick={()=> navigate('/forgot')} className='log-b'>Click here</b></p>
             </div>
           </form>
     </div>
