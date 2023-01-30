@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='foot-img'>
               <img  className='footer-img' src='/logo.png' />
               <hr className='foot-line'/>
-              <p>
+              <p className='footed-p'>
                 About Medical Consultation and Support <br/>
                 @2023 Good Health. All right reserved.
               </p>
@@ -24,7 +24,7 @@ const Footer = () => {
                 <AiFillInstagram className='foot-icons' fontSize={25} color="#D9D9D9"/>
                 <AiOutlineTwitter className='foot-icons' fontSize={25} color="#D9D9D9"/>
               </div>
-              <p>
+              <p className='footed-p'>
                 Support: Health360@gmail.com
               </p>
             </div>

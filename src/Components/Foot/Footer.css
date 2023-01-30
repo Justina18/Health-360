@@ -21,4 +21,18 @@
 }
 .foot-icons{
     margin: 5px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+    .foot-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+        flex-wrap: wrap;
+    }
+    .footed-p{
+        display: none;
+    }
 }

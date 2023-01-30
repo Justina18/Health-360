@@ -8,7 +8,7 @@ import {GiClockwork} from 'react-icons/gi'
 const About = () => {
   return (
     <div className='about'>
-        <h1 className='miss-h1' >About Us</h1>
+        <h1 className='miss-h1'>About Us</h1>
         <div className='about-wrap'>
             <div className='abt-text'>
                 <p>

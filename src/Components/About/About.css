@@ -101,7 +101,7 @@
         font-size: medium;
     }
     .abt-img{
-        border-radius: 2px;
+        display:  none;
     }
     .miss-zig{
         display: flex;
