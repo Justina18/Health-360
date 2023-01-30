@@ -77,14 +77,32 @@ margin-left: 40px;
     justify-content: center;
     align-items: center;
 }
-    .home-book-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .home-butts{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+}
+.home-sign-button{
+    background:  #1B75BC;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 70px;
+    font-size: small;
+    font-weight: 600;
+    height: 32px;
+}
+.home-log-button{
+    background: transparent;
+    border: 2px solid #1B75BC;
+    border-radius: 8px;
+    color: #1B75BC;
+    width: 70px;
+    margin-right: 10px;
+    font-size: small;
+    font-weight: 600;
+    height: 32px;
 }

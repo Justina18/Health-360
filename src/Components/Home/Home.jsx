@@ -28,8 +28,8 @@ const Home = () => {
               </button>
               </div>
               <div className='home-butts'>
-              <button className='head-log-button '  onClick={()=> navigate('/log in')}>Log In</button>
-                <button className='head-sign-button' onClick={()=> navigate('/choice')}>Sign Up</button>
+              <button className='home-log-button '  onClick={()=> navigate('/log in')}>Log In</button>
+                <button className='home-sign-button' onClick={()=> navigate('/choice')}>Sign Up</button>
              </div>
               </div>
             
