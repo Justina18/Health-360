@@ -139,6 +139,9 @@
     flex-wrap: wrap;
     margin: 5px;
   }
+  .comp-h1{
+    
+  }
   .log-foot{
     display: flex;
     justify-content: center;
