@@ -60,10 +60,12 @@ margin-top: 40px;
     .are-text{
         font-family: 'Poppins';
     font-weight: 400;
-    font-size: large;
+    font-size: small;
         margin: 0;
     }
     .are-button{
-        margin-top: 4px;
+        width: 105px;
+        height: 36px;
+        margin: 10px;
     }
 }
