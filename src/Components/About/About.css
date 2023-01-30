@@ -101,7 +101,11 @@
         font-size: medium;
     }
     .about-wrap{
-        height: 40vh;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .abt-text{
         display: flex;
