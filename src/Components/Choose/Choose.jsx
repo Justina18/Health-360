@@ -20,7 +20,7 @@ const Choose = () => {
               <FaUserNurse fontSize={25} color="#1B75BC"/>
             For medical personnel
             </button>
-            <button onClick={()=> navigate('/sign up')} className='choose-button-user'>
+            <button onClick={()=> navigate('/user sign')} className='choose-button-user'>
               <FaUserCircle fontSize={25} color="#1B75BC"  />
             For Users
             </button>

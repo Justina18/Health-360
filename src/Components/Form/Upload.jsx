@@ -40,7 +40,7 @@ const Upload = () => {
           setSelectedImage(event.target.files[0]);
         }}
       /> Choose File</label>
-      <button className='custom-file-upload' onClick={()=> navigate('/sign up')}>
+      <button className='custom-file-upload' onClick={()=> navigate('/comp')}>
         Go Back
       </button>
       <button className="buttons" onClick={()=> navigate('/')}>

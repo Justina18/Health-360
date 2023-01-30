@@ -10,6 +10,8 @@ import Dashboard from './Dashboard/Dashboard'
 import Choose from './Components/Choose/Choose'
 import Complete from './Components/Form/Complete'
 import Forgot from './Components/Form/Forgot'
+import UserInput from './Components/Form/UserInput'
+import UserPass from './Components/Form/UserPass'
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
           <Route path='/choice' element={ <Choose/> } />
           <Route path='/comp' element={ <Complete/> }/>
           <Route path='/forgot' element={ <Forgot/> }/>
+          <Route path='/user sign' element={ <UserInput/> } />
+          <Route path='/user password' element={ <UserPass/> } />
         </Routes>
       </Router>
     </div>

@@ -38,9 +38,19 @@
     border-radius: 12px;
     flex-wrap: wrap;
   }
+  .check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .p{
     font-size: small;
-    margin-bottom: 12px;
+    margin: 12px;
+    color: black;
+  }
+  .use-p{
+    font-size: x-small;
+    margin: 12px;
     color: black;
   }
   .log-p{
@@ -140,6 +150,17 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 5px;
+  }
+  .use-h1{
+    margin: 15px;
+  }
+  .use-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    flex-direction: column;
   }
   .comp-h1{
     text-align: center;

@@ -3,7 +3,7 @@ import Form from './Form';
 import './AllForm.css';
 import { useNavigate } from 'react-router-dom';
 
-const Inputs = () => {
+const UserInput = () => {
 
     const [isValid, setValid] = useState(false)
     const navigate = useNavigate()
@@ -86,15 +86,15 @@ const Inputs = () => {
             <button className='back-button' onClick={()=> navigate('/choice')}>
               Go Back
             </button>
-            <button className='button' type='submit' onClick={()=> navigate('/comp')} disabled={!validate()} >
+            <button className='button' type='submit' onClick={()=> navigate('/user password')} disabled={!validate()} >
                 CONTINUE
             </button>
             </div>
-            <p className='p'>Already have an account? <b className='b'onClick={()=> navigate('/log in')} > Log In.</b></p>
+            <p className='use-p'>Already have an account? <b className='b'onClick={()=> navigate('/log in')} > Log In.</b></p>
             </div>
           </form>
     </div>
   )
 }
 
-export default Inputs
+export default UserInput;
