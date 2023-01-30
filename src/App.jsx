@@ -14,11 +14,15 @@ import UserInput from './Components/Form/UserInput'
 import UserPass from './Components/Form/UserPass'
 import SignSuccess from './Components/Form/SignSuccess'
 import Footer from './Components/Foot/Footer'
+import Book from './Components/Book/Book'
+import Prem from './Components/Prem/Prem'
+import Header from './Components/Header/Header'
 
 const App = () => {
   return (
     <div className='App'>
         <Router>
+          <Header/>
         <Routes>
           <Route path="/" element={ <Home/> } />
           <Route path='/sign up' element={ <Inputs/> }/>
@@ -32,6 +36,8 @@ const App = () => {
           <Route path='/user sign' element={ <UserInput/> } />
           <Route path='/user password' element={ <UserPass/> } />
           <Route path='/sign success' element={ <SignSuccess/> } />
+          <Route path='book' element={ <Book/> }/>
+          <Route path='premium' element={ <Prem/> }/>
         </Routes>
         <Footer/>
       </Router>
