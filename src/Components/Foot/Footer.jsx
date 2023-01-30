@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='Footer-wrap'>
             <div className='foot-img'>
               <img  className='footer-img' src='/logo.png' />
-              <hr className='line'/>
+              <hr className='foot-line'/>
               <p>
                 About Medical Consultation and Support <br/>
                 @2023 Good Health. All right reserved.
