@@ -13,6 +13,7 @@ import Forgot from './Components/Form/Forgot'
 import UserInput from './Components/Form/UserInput'
 import UserPass from './Components/Form/UserPass'
 import SignSuccess from './Components/Form/SignSuccess'
+import Footer from './Components/Foot/Footer'
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path='/user password' element={ <UserPass/> } />
           <Route path='/sign success' element={ <SignSuccess/> } />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   )
