@@ -21,7 +21,7 @@ const Header = () => {
                 <img onClick={()=> navigate('/')} className='head-img' src='/head-log.jpeg' />
              </div>
              <div className='head-links'>
-                <h5 className='head-links' >Home</h5>
+                <h5  onClick={()=> navigate('/')} className='head-links' >Home</h5>
                 <h5 className='head-links'>About</h5>
                 <h5 className='head-links'>Services</h5>
                 <h5 className='head-links'>Contact</h5>
