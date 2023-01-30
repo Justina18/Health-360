@@ -1,6 +1,6 @@
 .Footer-wrap{
     color: white;
-    height: 50vh;
+    height: 45vh;
     background-color: #0D3859;
     display: flex;
     justify-content: space-around;
@@ -32,6 +32,10 @@
         margin: 5px;
         flex-wrap: wrap;
     }
+    .footer-img{
+    width: 160px;
+    height: 90px;
+}
     .footed-p{
         display: none;
     }
