@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <div className='Footer'>
         <div className='Footer-wrap'>
-            <div className=''>
+            <div className='foot-img'>
               <img  className='footer-img' src='/logo.png' />
-              <hr/>
+              <hr className='line'/>
               <p>
                 About Medical Consultation and Support <br/>
                 @2023 Good Health. All right reserved.
@@ -19,11 +19,14 @@ const Footer = () => {
             </div>
             <div>
               <div>
-                <MdEmail fontSize={25} color="#D9D9D9"/>
-                <FaFacebook fontSize={25} color="#D9D9D9"/>
-                <AiFillInstagram fontSize={25} color="#D9D9D9"/>
-                <AiOutlineTwitter fontSize={25} color="#D9D9D9"/>
+                <MdEmail className='foot-icons' fontSize={25} color="#D9D9D9"/>
+                <FaFacebook className='foot-icons' fontSize={25} color="#D9D9D9"/>
+                <AiFillInstagram className='foot-icons' fontSize={25} color="#D9D9D9"/>
+                <AiOutlineTwitter className='foot-icons' fontSize={25} color="#D9D9D9"/>
               </div>
+              <p>
+                Support: Health360@gmail.com
+              </p>
             </div>
         </div>
     </div>

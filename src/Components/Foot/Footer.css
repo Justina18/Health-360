@@ -1,9 +1,24 @@
 .Footer-wrap{
     color: white;
     height: 50vh;
-    background-color: #124F7D;
+    background-color: #0D3859;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer-img{
         width: 180px;
     height: 110px;
+}
+.line{
+    height: 170px;
+    margin: 20px;
+}
+.foot-icons{
+    margin: 5px;
 }
