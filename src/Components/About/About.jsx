@@ -15,6 +15,16 @@ const About = () => {
                     <img className='abt-img' src='/About.jpg' />
                 </div> 
         </div>
+        <div className='mission'>
+            <div className='mission-wrap'>
+                <div className='mission-img-wrap'>
+                <img  className='mission-img' src='/logo.png' />
+                </div>
+                <h1>Our Mission</h1>
+                <br/>
+                <h3>Health360's mission is to make quality healthcare accessible to every African with a smart device</h3>
+            </div>
+        </div>
     </div>
   )
 }
