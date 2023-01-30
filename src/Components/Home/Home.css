@@ -72,6 +72,9 @@ margin-left: 40px;
     .home-prem-button{
         display: none;
     }
+    .home-text{
+        text-align: center;
+    }
     .home-buttons{
     display: flex;
     justify-content: center;

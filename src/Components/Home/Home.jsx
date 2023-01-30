@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import How from '../How/How';
 import './Home.css'
 import { useNavigate } from 'react-router-dom';
+import About from '../About/About';
 
 const Home = () => {
   const navigate = useNavigate()
@@ -36,6 +37,7 @@ const Home = () => {
               </div>
             
         </div>
+        <About/>
         <How/>
         <Are/>
     </div>

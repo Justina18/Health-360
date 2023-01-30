@@ -1,0 +1,19 @@
+.about{
+    background-color: #1B75BC;
+}
+.about-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abt-img-wrap{
+    width: 335px;
+    height: 280px;
+}
+.abt-text{
+    color: white;
+}
+.abt-img{
+    width: 100%;
+    height: 100%;
+}

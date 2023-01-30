@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Raleway;
-}
+
 .Are{
     display: flex;
     justify-content: center;
@@ -13,7 +8,7 @@
     width:100% ;
     background: #9EBCEA;
     color: white;
-  
+     font-family: Raleway;
 }
 .are-wrap{
     display: flex;
