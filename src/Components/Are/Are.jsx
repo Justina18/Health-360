@@ -1,7 +1,11 @@
 import React from 'react'
 import './Are.css'
+import { useNavigate } from 'react-router-dom';
 
 const Are = () => {
+  
+  const navigate = useNavigate()
+
   return (
     <div className='Are'>
         <h1 className='are-h1'>
@@ -23,7 +27,7 @@ const Are = () => {
         </div>
         </div>
         <div>
-        <button className='are-button'>More Info</button>
+        <button onClick={()=> navigate('/more info')} className='are-button'>More Info</button>
         </div>
     </div>
   )

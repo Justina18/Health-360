@@ -18,6 +18,7 @@ import Book from './Components/Book/Book'
 import Prem from './Components/Prem/Prem'
 import Header from './Components/Header/Header'
 import About from './Components/About/About'
+import More from './Components/More/More'
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
           <Route path='book' element={ <Book/> }/>
           <Route path='premium' element={ <Prem/> }/>
           <Route path='/about' element={ <About/> }/>
+          <Route path='/more info' element={ <More/> }/>
         </Routes>
         <Footer/>
       </Router>
