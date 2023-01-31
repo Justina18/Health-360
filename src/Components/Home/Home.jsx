@@ -1,6 +1,6 @@
 import React from 'react'
 import Are from '../Are/Are';
-import Choose from '../Choose/Choose';
+import Footer from '../Foot/Footer';
 import Header from '../Header/Header';
 import How from '../How/How';
 import './Home.css'
@@ -11,6 +11,7 @@ const Home = () => {
   const navigate = useNavigate()
   return (
     <div className='Home'>
+                <Header/>
         <div className='Home-wrap'>
           <div className='clip-wrap'>
             <div className='land-img-wrap'>
@@ -52,6 +53,7 @@ const Home = () => {
         <About/>
         <How/>
         <Are/>
+        <Footer/>
     </div>
   )
 }

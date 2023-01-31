@@ -6,7 +6,6 @@ import Inputs from './Components/Form/Inputs'
 import Upload from './Components/Form/Upload'
 import LogIn from './Components/Form/LogIn'
 import LogSuccess from './Components/Form/LogSuccess'
-import Dashboard from './Dashboard/Dashboard'
 import Choose from './Components/Choose/Choose'
 import Complete from './Components/Form/Complete'
 import Forgot from './Components/Form/Forgot'
@@ -19,12 +18,13 @@ import Prem from './Components/Prem/Prem'
 import Header from './Components/Header/Header'
 import About from './Components/About/About'
 import More from './Components/More/More'
+import Dashboard from './Components/Dashboard/Dashboard'
 
 const App = () => {
   return (
     <div className='App'>
         <Router>
-          <Header/>
+
         <Routes>
           <Route path="/" element={ <Home/> } />
           <Route path='/sign up' element={ <Inputs/> }/>
@@ -43,7 +43,7 @@ const App = () => {
           <Route path='/about' element={ <About/> }/>
           <Route path='/more info' element={ <More/> }/>
         </Routes>
-        <Footer/>
+ 
       </Router>
     </div>
   )

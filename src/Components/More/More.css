@@ -4,8 +4,48 @@
     box-sizing: border-box; 
 }
 .More{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+.More-h2{
+    color: #1B75BC;
+    margin-left: 4px;
+}
+.More-p{
+    margin: 8px;
+}
+.More-wrap{
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.More-img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    width:580px;
+}
+.More-img{
+    height: 100%;
+    width: 100%;
+}
+.More-button{
+    margin: 8px;
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-size: medium;
+    border: none;
+    background-color: #1B75BC;
 }
