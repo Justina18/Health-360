@@ -95,16 +95,7 @@
     display: none;
 }
 @media screen and (max-width: 767px) {
-    .about{
-        background-color: #1B75BC;
-        width: 100%;
-        height: 220vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-    }
+    
     .about-wrap{
         height: 30vh;
         display: flex;
