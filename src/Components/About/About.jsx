@@ -31,7 +31,7 @@ const About = () => {
                     <CgShapeZigzag fontSize={25}/>
                     </div>
                     <br/>
-                    <h4 className='miss-h4'>Health360's mission is to make quality healthcare accessible to every African with a smart device</h4>
+                    <h4 className='miss-h4'>Health360's mission is to make quality healthcare accessible <br/> to every person that has access to any smart device.</h4>
                 </div>
             </div>
         </div>

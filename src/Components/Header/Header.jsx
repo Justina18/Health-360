@@ -22,7 +22,7 @@ const Header = () => {
              </div>
              <div className='head-links'>
                 <h4  onClick={()=> navigate('/')} className='head-links' >Home</h4>
-                <h4 className='head-links'>About</h4>
+                <h4 onClick={()=> navigate('/about')} className='head-links'>About</h4>
                 <h4 className='head-links'>Services</h4>
                 <h4 className='head-links'>Contact</h4>
                 <h4 className='head-links' onClick={()=> navigate('/dashboard')}>Dashboard</h4>

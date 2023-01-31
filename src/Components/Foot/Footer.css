@@ -18,6 +18,8 @@
 .foot-line{
     height: 170px;
     margin: 20px;
+    background-color: white;
+    color: white;
 }
 .foot-icons{
     margin: 5px;
@@ -33,8 +35,8 @@
         flex-wrap: wrap;
     }
     .footer-img{
-    width: 160px;
-    height: 90px;
+    width: 140px;
+    height: 70px;
 }
     .footed-p{
         display: none;

@@ -17,6 +17,7 @@ import Footer from './Components/Foot/Footer'
 import Book from './Components/Book/Book'
 import Prem from './Components/Prem/Prem'
 import Header from './Components/Header/Header'
+import About from './Components/About/About'
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           <Route path='/sign success' element={ <SignSuccess/> } />
           <Route path='book' element={ <Book/> }/>
           <Route path='premium' element={ <Prem/> }/>
+          <Route path='/about' element={ <About/> }/>
         </Routes>
         <Footer/>
       </Router>
