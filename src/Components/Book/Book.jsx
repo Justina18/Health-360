@@ -1,44 +1,34 @@
-import React,{useState} from 'react'
-import Doc from './doct.jpg'
-import { useNavigate } from 'react-router-dom'
-import Booker from './Booker'
-
+import React from 'react'
+import {IoLocation} from 'react-icons/io'
+import './Book.css'
 
 const Book = () => {
-  const navigate = useNavigate()
-  const [active, setActive] = useState({
-      image: "",
-      text: "",
-    })
-  
-    const added=[
-      {
-      id:1,
-     image: Doc,
-     text:' Hey there'
-    },
-  ];
-
-  const handleChange= e =>{
-    setActive({...active, [e.target.name]: e.target.active});
-  }
-  
-  const receivedValues =(e)=>{
-    e.preventDefault()
-    console.log(values)
-    window.location.reload()
-  }
-
   return (
-    <div>
-      <h1>
-        Testing!!
-      </h1>
-      {added.map((i)=>
-      <Booker key={i.id} {...i} handleChange={handleChange} active={active[i.name]}/>
-      )}
+    <div  className='book'>
+      <div className='book-wrap'>
+        <h1>Available Doctors</h1>
+        <div  className='book-wrap-main'>
+          <div className='book-img-wrap'>
+            <img  className='book-img' src='/book.jpg'/>
+          </div>
+          <div className='book-text'>
+            <h2>
+              Joseph Jonah
+            </h2>
+            <p>Dietitian</p>
+            <IoLocation/>Abuja
+            <hr/>
+          </div>
+            <div className='book-foot'>
+             <p> $1500</p>
+             <button className='book-butt'>
+                Book Now
+             </button>
+            </div>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Book 
+export default Book
