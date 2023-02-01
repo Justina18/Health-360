@@ -21,7 +21,7 @@ const Book = () => {
         <div className='book-head'>
           <img onClick={()=> navigate('/')} className='book-head-img' src='/head-log.jpeg' />
           <h1 className='book-head-h'>Available Doctors</h1> 
-          <h4>Favorites <BsSuitHeartFill color='E22727' fontSize={15}/> </h4>
+          <h4 className='book-head-h'>Favorites <BsSuitHeartFill color='E22727' fontSize={15}/> </h4>
         </div>
         <hr className='book-line'/>
         <div className='wrapped'>
