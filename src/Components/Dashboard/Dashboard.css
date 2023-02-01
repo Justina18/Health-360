@@ -223,4 +223,18 @@
     margin-top: 2px;
   }
   
+  .Burger {
+    display: none;
+  }
   
+  @media screen and (max-width: 767px) {
+    .side{
+      display: none;
+    }
+    .Burger {
+      display: flex;
+    }
+    .Header-Toggle{
+      display: flex;
+    }
+  }

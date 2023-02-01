@@ -1,7 +1,9 @@
-import {useRef, useReducer} from 'react'
+import {useState,useRef, useReducer} from 'react'
 import './Dashboard.css'
 import './Dash'
 import {AiFillHome} from 'react-icons/ai'
+import {FiAlignJustify} from 'react-icons/fi';
+import {FaTimes} from 'react-icons/fa'
 import {SlUserFollow} from 'react-icons/sl'
 import {AiOutlineArrowUp} from 'react-icons/ai'
 import {RxClock} from 'react-icons/rx'
@@ -26,7 +28,13 @@ function newTodo(inputRef) {
 
 
 const Appointment = () => {
-  
+  const [toggle, setToggle] = useState(true);
+
+  const handleToggle = () => { setToggle(!toggle) }
+  const FiAlignJustif = (<FiAlignJustify fontSize={25} color="#1B75BC" onClick={handleToggle} />)
+  const FaTime = (<div>
+      <FaTimes fontSize={25} color="#D9D9D9" onClick={handleToggle} />
+                </div>)
   const navigate = useNavigate()
   const inputRef = useRef('')
   const [state, dispatch] = useReducer(reducer, JSON.parse(localStorage.getItem('todo'))|| [])
@@ -41,6 +49,9 @@ const Appointment = () => {
     <div className='dash'>
       <Header/>
       <div className='dash-wrap'>
+      <div className='Burger'>
+                    {toggle ? FiAlignJustif : FaTime}
+                </div>
         <div className='side'>
             <h4>
               Dashboard
