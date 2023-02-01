@@ -52,11 +52,26 @@
     background-color: #1B75BC;
     height: 6px;
 }
+.head-link{
+  display: none;
+}
 .Burger {
     display: none;
   }
+  .hid{
+    background-color: #1B75BC;
+    position: relative ;
+    top: 66px;
+    left:200px
+  }
   
   @media screen and (max-width: 767px) {
+    .head-link{
+      width: 100px;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+        }
     .head-links{
       display: none;
     }

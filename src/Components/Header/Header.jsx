@@ -24,12 +24,14 @@ const Header = () => {
             <div>
                 <img onClick={()=> navigate('/')} className='head-img' src='/head-log.jpeg' />
              </div>
+             <div className='hid'>
              {isOpen && (
               <div className='head-link'>
-              <h4  onClick={()=> navigate('/')} className='head-links' >Home</h4>
-              <h4 className='head-links' onClick={()=> navigate('/dashboard')}>Dashboard</h4>
+              <h4  onClick={()=> navigate('/')} className='head-link' >Home</h4>
+              <h4 className='head-link' onClick={()=> navigate('/dashboard')}>Dashboard</h4>
            </div>
              )}
+             </div>
             <div className='head-links'>
                 <h4  onClick={()=> navigate('/')} className='head-links' >Home</h4>
                 <h4 className='head-links' onClick={()=> navigate('/dashboard')}>Dashboard</h4>
