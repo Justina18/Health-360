@@ -7,8 +7,12 @@ import { useNavigate } from 'react-router-dom';
 const Header = () => {
   const navigate = useNavigate()
   const [toggle, setToggle] = useState(true);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const handleToggle = () => { setToggle(!toggle) }
+  const handleToggle = () => { 
+    setToggle(!toggle) 
+  setIsOpen(!isOpen)
+  }
   const FiAlignJustif = (<FiAlignJustify fontSize={25} color="#1B75BC" onClick={handleToggle} />)
   const FaTime = (<div>
       <FaTimes fontSize={25} color="#D9D9D9" onClick={handleToggle} />
@@ -20,14 +24,16 @@ const Header = () => {
             <div>
                 <img onClick={()=> navigate('/')} className='head-img' src='/head-log.jpeg' />
              </div>
-             <div className='head-links'>
+             {isOpen && (
+              <div className='head-link'>
+              <h4  onClick={()=> navigate('/')} className='head-links' >Home</h4>
+              <h4 className='head-links' onClick={()=> navigate('/dashboard')}>Dashboard</h4>
+           </div>
+             )}
+            <div className='head-links'>
                 <h4  onClick={()=> navigate('/')} className='head-links' >Home</h4>
-                {/* <h4 onClick={()=> navigate('/about')} className='head-links'>About</h4>
-                <h4 className='head-links'>Services</h4>
-                <h4 className='head-links'>Contact</h4> */}
                 <h4 className='head-links' onClick={()=> navigate('/dashboard')}>Dashboard</h4>
              </div>
-            
              <div className='head-buttons'>
               <button className='head-log-button '  onClick={()=> navigate('/log in')}>Log In</button>
                 <button className='head-sign-button' onClick={()=> navigate('/choice')}>Sign Up</button>

@@ -16,14 +16,17 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 25%;
+    width: 35%;
     height: 100vh;
     background-color: white;
     color: black;
     border: 2px solid #9EBCEA;
 }
+.dash-txt{
+  margin-top: 80px;
+}
 .dash-hr{
-    border-top: 1px solid #9EBCEA;
+    border-top: 1px solid #1B75BC;
     width: 1005;
 }
 .dash-img{
@@ -55,6 +58,10 @@
 }
 .dash-p{
     color: grey;
+    font-size: medium;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .dash-p:visited{
     color: #1B75BC;
@@ -68,7 +75,6 @@
 
 .hey{
     display: flex;
-    flex-wrap: wrap;
 }
 .dun{
     display: flex;
@@ -76,13 +82,17 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    background-color: #44A1E4;
 }
 .hey-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    height: 300px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
 }
 /* The wave */
 * {

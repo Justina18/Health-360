@@ -5,6 +5,21 @@
     align-items: center;
     background: linear-gradient(to left, #2991E0, #1B75BC, #1765A1);
 }
+.prem-head{   
+   width: 100%;
+}
+.prem-head-img-holder{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.prem-head-img{
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 20px
+}
 .prem-wrap{
     display: flex;
     justify-content: center;
