@@ -108,7 +108,7 @@ const Appointment = () => {
               <div className='inputed-holder'>
                 <input 
                   ref={inputRef} 
-                  placeholder='Add new Todo...' 
+                  placeholder='Add new Appointment...' 
                         />
                 <button 
                 className='plus-butt'
