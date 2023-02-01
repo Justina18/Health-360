@@ -1,7 +1,7 @@
 .dash-wrap{
     display: flex;
     background-color: #F5F7F9;
-    flex-wrap: wrap;
+
 }
 
 .dash-main{
@@ -9,7 +9,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 100%; 
+       flex-wrap: wrap;
 }
 .side{
     display: flex;
