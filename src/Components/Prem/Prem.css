@@ -1,6 +1,7 @@
 .prem{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background: linear-gradient(to left, #2991E0, #1B75BC, #1765A1);
 }
@@ -10,6 +11,10 @@
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
+}
+.prem-h{
+    margin-top: 60px;
+    color: white;
 }
 .prem-hold{
     display: flex;
@@ -23,11 +28,27 @@
     margin: 10px;
 }
 .prem-p{
-    text-align: center;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
 }
 .prem-h1{
     color: #1765A1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prem-butt{
+    border: none;
+    height: 35px;
+    width: 120px;
+    color: white;
+    margin-top: 12px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #2991E0, #1B75BC, #1765A1);
 }
 @media screen and (max-width: 767px) {
     .prem-wrap{
