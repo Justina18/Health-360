@@ -26,6 +26,12 @@
     margin: 10px;
     margin-left: 20px;
 }
+.home-buttons{
+    display: flex;
+    margin: 10px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
 .home-book-button{
 color: white;
 font-weight: 600;
@@ -49,11 +55,7 @@ background:  #D9D9D9;
 border-radius: 10px;
 margin-left: 40px;
 }
-.home-buttons{
-    margin: 10px;
-    margin-top: 60px;
-    margin-left: 20px;
-}
+
 .home-butts{
     display: none;
 }

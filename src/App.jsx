@@ -12,12 +12,11 @@ import Forgot from './Components/Form/Forgot'
 import UserInput from './Components/Form/UserInput'
 import UserPass from './Components/Form/UserPass'
 import SignSuccess from './Components/Form/SignSuccess'
-import Footer from './Components/Foot/Footer'
 import Book from './Components/Book/Book'
 import Prem from './Components/Prem/Prem'
-import Header from './Components/Header/Header'
 import About from './Components/About/About'
 import More from './Components/More/More'
+import Appointment from './Components/Dashboard/Appointment'
 import Dashboard from './Components/Dashboard/Dashboard'
 
 const App = () => {
@@ -31,7 +30,8 @@ const App = () => {
           <Route path='/upload' element={ <Upload/> }/>
           <Route path='/log in' element={ <LogIn/> }/>
           <Route path='/log in img' element={ <LogSuccess/> }/>
-          <Route path='/dashboard' element={ <Dashboard/> }/>
+          <Route path='/appointment' element={ <Appointment/> }/>
+          <Route path='/dashboard' element={ <Dashboard/> } />
           <Route path='/choice' element={ <Choose/> } />
           <Route path='/comp' element={ <Complete/> }/>
           <Route path='/forgot' element={ <Forgot/> }/>

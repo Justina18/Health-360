@@ -79,7 +79,7 @@ const Inputs = () => {
           </form>
             <div className='foot'>
               <div className='check'>
-              <input type="checkbox" name="terms" id="terms" />
+              <input  className='check-box' type="checkbox" name="terms" id="terms" />
             <label className='label' for="terms">I have read and agreed to the <b className='b'> Terms and conditions</b></label>
             </div>
             <div>

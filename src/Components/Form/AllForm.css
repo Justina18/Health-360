@@ -267,6 +267,9 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .check-box{
+    width: 12px;
+  }
   .this{
     display: flex;
     justify-content: center;

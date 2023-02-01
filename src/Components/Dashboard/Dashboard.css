@@ -1,8 +1,20 @@
 .dash-wrap{
     display: flex;
     background-color: #F5F7F9;
+    flex-wrap: wrap;
+}
+
+.dash-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 .side{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 25%;
     height: 100vh;
     background-color: white;
@@ -22,14 +34,193 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 45%;
     background-color: #1B75BC;
 }
 .dash-icon-wrap{
     display: flex;
     background-color: white;
-    width: 200px;
-    height: 70px;
+    width: 210px;
+    height: 90px;
     border-radius: 5px;
     border: 1px solid #1B75BC;
 }
+.dash-icon-wrap-holder{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.dash-p{
+    color: grey;
+}
+.dash-p:visited{
+    color: #1B75BC;
+}
+.dash-icon-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hey{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.hey-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+/* The wave */
+* {
+    margin: 0px;
+    font-family: Raleway;
+  }
+  .todo {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #1B75BC;
+  }
+  .todo-wrap {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    border-radius: 5px;
+  }
+  .inputed-holder{
+    background-color: white;
+    border: 3px solid #1B75BC;
+    height: 50px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 3px 0px 3px;
+    border-radius: 5px;
+  }  .checkbox{
+    width: 20%;
+  }
+  input {
+    width: 90%;
+    height: 70%;
+    outline: none;
+    border: none;
+  }
+   .plus-butt {
+    font-size: 26px;
+    font-weight: 100;
+    height: 30px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    border: none;
+  }
+  .remove-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+  }
+  .Card {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+  }
+  .Card-holder{
+    
+    min-height: auto;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .texts{
+    display: flex;
+    flex-direction: column;
+    color:rgb(36, 36, 36);
+    width: 97.8%;
+  }
+  .text1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:rgb(36, 36, 36)
+  }
+  .wrap {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    margin-top: 15px;
+  }
+  .scroll {
+    height: 100%;
+    overflow-y: auto;
+    max-height: 150px;
+    background-color: rgba(118, 116, 116, 0.4);
+    border-radius: 0px 0px 10px 10px;
+  }
+  .card_top {
+    background-color: #1B75BC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .top-parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+  }
+  .status{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+  .Main_cardtop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: black;
+    margin-top: 2px;
+  }
+  
+  

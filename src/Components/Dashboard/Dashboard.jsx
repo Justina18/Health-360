@@ -1,51 +1,47 @@
 import React from 'react'
-import './Dashboard.css'
-import {AiFillHome} from 'react-icons/ai'
-import {SlUserFollow} from 'react-icons/sl'
-import {AiOutlineArrowUp} from 'react-icons/ai'
+import {BsSuitHeartFill} from 'react-icons/bs'
+import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
+    
+  const navigate = useNavigate()
   return (
-    <div className='dash'>
-      <div className='dash-wrap'>
-        <div className='side'>
-            <h4>
-              Dashboard
-            </h4>
+    <div className='hey'>
+          <div className='side'>
             <div>
-            <img className='dash-img' src='/doct.jpg'/>
-            <h2>Albertini Igwe</h2>
+                <h4>
+                Dashboard
+                </h4>
+                <img className='dash-img' src='/profile.png'/>
+                <h2>Albertini Igwe</h2>
           </div>
           <div className='dash-txt'>
-              <p className='dash-p'>Home</p>
+              <p  onClick={()=> navigate('/')}className='dash-p'>Home</p>
               <hr className='dash-hr'/>
               <p className='dash-p'>Your Profile</p>
               <hr className='dash-hr'/>
-              <p className='dash-p'>Appointments</p>
+              <p  onClick={()=> navigate('/appointment')} className='dash-p'>Appointments and Schedule</p>
               <hr className='dash-hr'/>
-              <p className='dash-p'>My Schedule</p>
+              <p className='dash-p'>Notifications</p>
+              <hr className='dash-hr'/>
+              <p className='dash-p'>Messages</p>
               <hr className='dash-hr'/>
               <p className='dash-p'>Settings</p>
           </div>
         </div>
 
-        <div className='dash-main'>
-          <div>
-            <div className='dash-icon-wrap'>
-              <div className='dash-icon'>
-                <SlUserFollow color='white' fontSize={50}/>
-              </div>
-              <div>
-                <p>Patients</p>
-                <AiOutlineArrowUp/>14
-              </div>
+        <div className='dun'>
+            <div className='hey-wrap'>
+                <div className='heys'>
+                    <h1>Hello Doc! <BsSuitHeartFill color='red' fontSize={15}/> </h1>
+                    <p>
+                    Welcome to your dashboard. <br/> See a quick summary of your transactions below.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
     </div>
   )
 }
 
-export default Dashboard
+export default Dashboard;

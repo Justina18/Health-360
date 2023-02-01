@@ -22,13 +22,13 @@ const Header = () => {
              </div>
              <div className='head-links'>
                 <h4  onClick={()=> navigate('/')} className='head-links' >Home</h4>
-                <h4 onClick={()=> navigate('/about')} className='head-links'>About</h4>
+                {/* <h4 onClick={()=> navigate('/about')} className='head-links'>About</h4>
                 <h4 className='head-links'>Services</h4>
-                <h4 className='head-links'>Contact</h4>
+                <h4 className='head-links'>Contact</h4> */}
                 <h4 className='head-links' onClick={()=> navigate('/dashboard')}>Dashboard</h4>
              </div>
             
-             <div>
+             <div className='head-buttons'>
               <button className='head-log-button '  onClick={()=> navigate('/log in')}>Log In</button>
                 <button className='head-sign-button' onClick={()=> navigate('/choice')}>Sign Up</button>
              </div>
