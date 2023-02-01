@@ -73,12 +73,15 @@
 }
 @media screen and (max-width: 767px) {
     .book-wrap-main{
-        width: 280px;
-        height: 140px;
+        width: 300px;
+        height: 160px;
     }
     .book-img-wrap{
         width: 80px;
         height: 50px;
+    }
+    .book-head-h{
+        font-size: small;
     }
     .book-h{
         font-size: small;
