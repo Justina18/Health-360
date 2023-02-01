@@ -20,7 +20,7 @@ const Book = () => {
       <div className='book-wrap'>
         <div className='book-head'>
           <img onClick={()=> navigate('/')} className='book-head-img' src='/head-log.jpeg' />
-          <h1>Available Doctors</h1> 
+          <h1 className='book-head-h'>Available Doctors</h1> 
           <h4>Favorites <BsSuitHeartFill color='E22727' fontSize={15}/> </h4>
         </div>
         <hr className='book-line'/>
