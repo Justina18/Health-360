@@ -41,7 +41,7 @@ const Dashboard = () => {
         <div className='dun'>
             <div className='hey-wrap'>
                 <div className='heys'>
-                    <h1>Hello Doc! <BsSuitHeartFill color='red' fontSize={15}/> </h1>
+                    <h1>Hello Doc! <BsSuitHeartFill color='E22727' fontSize={15}/> </h1>
                     <p>
                     Welcome to your dashboard. <br/> See a quick summary of your transactions below.
                     </p>
