@@ -12,6 +12,7 @@
     align-items: center;
     flex-direction: column;
     color: white;
+    margin-top: 102px;
 }
 .miss-h1{
     color: white;
@@ -94,7 +95,7 @@
 .miss-zig{
     display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 760px) {
     .about{
     height: 260vh;
 }

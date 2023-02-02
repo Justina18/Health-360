@@ -13,7 +13,7 @@ const More = () => {
         <div className='More-img-wrap' >
           <img className='More-img' src='/Morer.png' />
         </div>
-        <div>
+        <div className='More-text'>
         <h1 className='More-h2'>
           More Info
         </h1>
@@ -29,7 +29,7 @@ const More = () => {
             Many more features.
 
         </p>
-        <p className='More-p'>
+        <p className='More-pe'>
             If you are interested in providing healthcare services, click the <br/> join us button below!
         </p>
           <button onClick={()=> navigate('/sign up')}  className='More-button'>

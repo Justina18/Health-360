@@ -5,12 +5,11 @@
 }
 .More{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 .More-h2{
@@ -18,6 +17,9 @@
     margin-left: 4px;
 }
 .More-p{
+    margin: 8px;
+}
+.More-pe{
     margin: 8px;
 }
 .More-wrap{
@@ -48,4 +50,20 @@
     font-size: medium;
     border: none;
     background-color: #1B75BC;
+}
+@media screen and (max-width: 760px) {
+    .More-img-wrap{
+        display: none;
+    }    
+    .More-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    flex-direction: column;
+    }
+    .More-p{
+        text-align: start;
+        
+    }
 }

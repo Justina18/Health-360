@@ -29,6 +29,7 @@ const Header = () => {
               <div className='head-link'>
               <h4  onClick={()=> navigate('/')} className='head-link' >Home</h4>
               <h4 className='head-link' onClick={()=> navigate('/dashboard')}>Dashboard</h4>
+              <h4 className='head-link'  onClick={()=> navigate('premium')}>Go Premium</h4>
            </div>
              )}
              </div>
