@@ -51,9 +51,10 @@
     height: 32px;
 }
 .line{
-    background-color: #1B75BC;
-    height: 2px;
-    position: fixed;
+  width: 100%;
+  height: 2px;
+  margin: 2px;
+  border-top: 2px solid #1B75BC;
 }
 .head-link{
   display: none;

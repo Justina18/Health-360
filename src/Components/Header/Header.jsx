@@ -24,7 +24,6 @@ const Header = () => {
             <div>
                 <img onClick={()=> navigate('/')} className='head-img' src='/head-log.jpeg' />
              </div>
-             <></>
               {isOpen && (
              <div className='hid'>
               <div className='head-link'>
