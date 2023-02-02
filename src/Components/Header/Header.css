@@ -8,7 +8,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
 }
 .head-img{
     width: 90px;
@@ -50,7 +52,8 @@
 }
 .line{
     background-color: #1B75BC;
-    height: 6px;
+    height: 2px;
+    position: fixed;
 }
 .head-link{
   display: none;
@@ -58,18 +61,9 @@
 .Burger {
     display: none;
   }
-  .hid{
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.12);
-border-radius: 8px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.4px);
--webkit-backdrop-filter: blur(7.4px);
-border: 1px solid #44A1E4;
-    position: relative ;
-    top: 66px;
-    left:150px
-  }
+ .hid{
+  display: none;
+ }
   
   @media screen and (max-width: 767px) {
     .head-link{
@@ -84,6 +78,23 @@ border: 1px solid #44A1E4;
     .Burger {
       display: flex;
     }
+    .hid{
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(7.4px);
+      -webkit-backdrop-filter: blur(7.4px);
+      border: 1px solid #44A1E4;
+          position: relative ;
+          top: 66px;
+          left:120px;
+          width: 120px;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
     .Header-Toggle{
       display: flex;
     }

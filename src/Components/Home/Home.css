@@ -65,17 +65,16 @@ margin-left: 40px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* position:relative ; */
 }
 .land-img-wrap{
-    position:absolute;
     top: 150px;
     z-index: 200;
+    margin-top: 34px;
 }
 .clip{
     z-index: 100;
     width: 100%;
-    height: 100px;
+    height: 60px;
     background-color: #9EBCEA;
     clip-path: inset(0 0 0 0);
     position: absolute;
@@ -86,13 +85,13 @@ margin-left: 40px;
     align-items: center;
     }
     .gsk{
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 50px;
         margin-right: 60px;
     }
     .emzor{
-        width: 120px;
-        height: 60px;
+        width: 110px;
+        height: 50px;
         margin-right: 160px;
     }
 .land-img-two-wrap{

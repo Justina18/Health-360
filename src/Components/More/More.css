@@ -12,6 +12,21 @@
     align-items: center;
     flex-wrap: wrap;
 }
+.more-head{   
+    width: 100%;
+ }
+ .more-head-img-holder{
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+ }
+ .more-head-img{
+     width: 90px;
+     height: 70px;
+     cursor: pointer;
+     margin: 10px;
+     margin-top: 20px
+ }
 .More-h2{
     color: #1B75BC;
     margin-left: 4px;
