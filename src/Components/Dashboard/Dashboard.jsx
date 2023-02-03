@@ -4,7 +4,8 @@ import { useNavigate,NavLink } from 'react-router-dom';
 import {FiAlignJustify} from 'react-icons/fi';
 import {FaTimes} from 'react-icons/fa'
 import {AiFillHome,AiOutlineMessage,AiOutlineSetting} from 'react-icons/ai'
-import {BiUserCircle,BiBell} from 'react-icons/bi'
+import {BiUserCircle,BiBell,} from 'react-icons/bi'
+import {BsSuitHeart} from 'react-icons/bs'
 import {SlUserFollow} from 'react-icons/sl'
 import {AiOutlineArrowUp} from 'react-icons/ai'
 import {RxClock} from 'react-icons/rx'
@@ -44,6 +45,18 @@ const Dashboard = () => {
                   </div>)
                   const inputRef = useRef('')
                   const [state, dispatch] = useReducer(reducer, JSON.parse(localStorage.getItem('todo'))|| [])
+
+
+                  const activeColorObject ={
+                    color: "#1B75BC",
+                    fontWeight: 700
+                  }
+                  
+                  const colorObject ={
+                    color: "grey",
+                  }
+                  
+
   return (
     <div className='hey'>
         <div className='Burger'>
@@ -52,7 +65,7 @@ const Dashboard = () => {
                 {isOpen && (
                       <div className='sides'>
                       <div>
-                          <h4>
+                          <h4 onClick={()=> navigate('/dashboard')}>
                           Dashboard
                           </h4>
                           <div className='dash-img-wrap'>
@@ -63,40 +76,58 @@ const Dashboard = () => {
                     <div className='dash-txt'>
                         <NavLink to="/" className='dash-p'> <AiFillHome fontSize={25}/> Home</NavLink>
                         <hr className='dash-hr'/>
-                        <a  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</a>
+                        <NavLink  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</NavLink>
                         <hr className='dash-hr'/>
-                        <a onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</a>
+                        <NavLink onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</NavLink>
                         <hr className='dash-hr'/>
-                        <a className='dash-p'> <BiBell fontSize={25}/> Notifications</a>
+                        <NavLink className='dash-p'> <BiBell fontSize={25}/> Notifications</NavLink>
                         <hr className='dash-hr'/>
-                        <a className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</a>
+                        <NavLink className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</NavLink>
                         <hr className='dash-hr'/>
-                        <a className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</a>
+                        <NavLink className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</NavLink>
                     </div>
                   </div>
                 )}
           <div className='side'>
-            <div className='side-head'>
-                <h4>
-                Dashboard
-                </h4>
+          <div className='side-head'>
                 <div className='dash-img-wrap'>
-                <img className='dash-img' src='/profile.png'/>
+                  <h4 onClick={()=> navigate('/dashboard')}>
+                  Dashboard
+                  </h4>
+                  <h2>Albert Weed</h2>
                 </div>
-                <h2>Albert Weed</h2>
           </div>
           <div className='dash-txt'>
-              <a  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</a>
-              <hr className='dash-hr'/>
-              <a  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</a>
-              <hr className='dash-hr'/>
-              <a onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</a>
-              <hr className='dash-hr'/>
-              <a className='dash-p'> <BiBell fontSize={25}/> Notifications</a>
-              <hr className='dash-hr'/>
-              <a className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</a>
-              <hr className='dash-hr'/>
-              <a className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</a>
+          <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'  to="/" >
+              <AiFillHome color='grey' fontSize={20}/>  
+              <p className='dash-p'>  Home</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap' to='/profile' >
+               <BiUserCircle color='grey' fontSize={20}/><p className='dash-p'>   Your Profile</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap' to='/appointment'>
+               <BsJournalBookmarkFill color='grey'  fontSize={18}/><p  className='dash-p'>   Appointments and Schedule</p>
+              </NavLink>
+              <br/>
+              <NavLink  style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+               <BiBell  color='grey' fontSize={20}/>  <p className='dash-p'> Notifications</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+              <AiOutlineMessage color='grey'  fontSize={20}/>  <p className='dash-p'>  Messages</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+               <AiOutlineSetting color='grey'  fontSize={20}/> <p className='dash-p'> Settings</p>
+              </NavLink>
           </div>
         </div>
 

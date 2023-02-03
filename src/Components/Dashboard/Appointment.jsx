@@ -1,130 +1,118 @@
-import {useState,useRef, useReducer} from 'react'
-import './Dashboard.css'
-import './Dash'
-import {AiFillHome} from 'react-icons/ai'
+
+import React,{useState, useRef, useReducer} from 'react'
+import {BsJournalBookmarkFill} from 'react-icons/bs'
+import { useNavigate,NavLink } from 'react-router-dom';
 import {FiAlignJustify} from 'react-icons/fi';
 import {FaTimes} from 'react-icons/fa'
-import {SlUserFollow} from 'react-icons/sl'
-import {AiOutlineArrowUp} from 'react-icons/ai'
-import {RxClock} from 'react-icons/rx'
-import Dash from './Dash'
-import { useNavigate } from 'react-router-dom';
-import Header from '../Header/Header'
-
-function reducer(todos, action) {
-  switch (action.type) {
-    case 'Add':
-      return [...todos, newTodo(action.payload.name)]
-    case "checked":
-      return action.payload.Check
-    case "delete":
-      return action.payload.Check
-  }
-}
-
-function newTodo(inputRef) {
-  return { id: Date.now(), todo: inputRef, checkers: false }
-}
-
+import {AiFillHome,AiOutlineMessage,AiOutlineSetting} from 'react-icons/ai'
+import {BiUserCircle,BiBell} from 'react-icons/bi'
 
 const Appointment = () => {
+  const navigate = useNavigate()
   const [toggle, setToggle] = useState(true);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const handleToggle = () => { setToggle(!toggle) }
-  const FiAlignJustif = (<FiAlignJustify fontSize={25} color="#1B75BC" onClick={handleToggle} />)
+  const handleToggle = () => { 
+    setToggle(!toggle) 
+  setIsOpen(!isOpen)
+  }
+  const Justify = (<FiAlignJustify fontSize={25} color="#1B75BC" onClick={handleToggle} />)
   const FaTime = (<div>
       <FaTimes fontSize={25} color="#D9D9D9" onClick={handleToggle} />
                 </div>)
-  const navigate = useNavigate()
-  const inputRef = useRef('')
-  const [state, dispatch] = useReducer(reducer, JSON.parse(localStorage.getItem('todo'))|| [])
 
+const activeColorObject ={
+  color: "#1B75BC",
+  fontWeight: 700
+}
 
-  const handleClick = () => {
-    dispatch({ type: 'Add', payload: { name: inputRef.current.value } })
-  }
+const colorObject ={
+  color: "grey",
+}
 
 
   return (
-    <div className='dash'>
-      <Header/>
-      <div className='dash-wrap'>
-      <div className='Burger'>
-                    {toggle ? FiAlignJustif : FaTime}
-                </div>
-        <div className='side'>
-            <h4>
-              Dashboard
-            </h4>
-            <div>
-            <img className='dash-img' src='/doct.jpg'/>
-            <h2>Albertini Igwe</h2>
+    <div className='Appointment'>
+       <div className='Burger'>
+                    {toggle ? Justify : FaTime}
+      </div>
+                {isOpen && (
+                      <div className='siding'>
+                      <div className='side-head'>
+                <h4 onClick={()=> navigate('/dashboard')}>
+                Dashboard
+                </h4>
+                <h2>Albert Weed</h2>
           </div>
           <div className='dash-txt'>
-              <p  onClick={()=> navigate('/')}className='dash-p'>Home</p>
-              <hr className='dash-hr'/>
-              <p className='dash-p'>Your Profile</p>
-              <hr className='dash-hr'/>
-              <p  onClick={()=> navigate('/appointment' )} className='dash-p'>Appointments and Schedule</p>
-              <hr className='dash-hr'/>
-              <p className='dash-p'>Notifications</p>
-              <hr className='dash-hr'/>
-              <p className='dash-p'>Messages</p>
-              <hr className='dash-hr'/>
-              <p className='dash-p'>Settings</p>
+            <div className='p-wrap' onClick={()=> navigate('/')}>
+              <AiFillHome color='grey' fontSize={20}/>  <p className='dash-p'>  Home</p>
+              </div>
+              <br/>
+              <div className='p-wrap' onClick={()=> navigate('/profile')} >
+               <BiUserCircle color='grey'  fontSize={20}/><p className='dash-p'>   Your Profile</p>
+              </div>
+              <br/>
+              <div className='p-wrap'onClick={()=> navigate('/appointment')}>
+               <BsJournalBookmarkFill color='grey'  fontSize={18}/><p  className='dash-p'>   Appointments and Schedule</p>
+              </div>
+              <br/>
+              <div className='p-wrap'>
+               <BiBell  color='grey' fontSize={20}/>  <p className='dash-p'> Notifications</p>
+              </div>
+              <br/>
+              <div className='p-wrap'>
+              <AiOutlineMessage color='grey'  fontSize={20}/>  <p className='dash-p'>  Messages</p>
+              </div>
+              <br/>
+              <div className='p-wrap'>
+               <AiOutlineSetting color='grey'  fontSize={20}/> <p className='dash-p'> Settings</p>
+              </div>
           </div>
-        </div>
-
-        <div className='dash-main'>
-          
-          <div className='dash-icon-wrap-holder'>
-            <div className='dash-icon-wrap'>
-              <div className='dash-icon'>
-                <SlUserFollow color='white' fontSize={50}/>
-              </div>
-              <div className='dash-icon-text'>
-                <p>Patients</p>
-                <div><AiOutlineArrowUp/>14</div>
-                
-              </div>
-            </div>
-
-            <div className='dash-icon-wrap'>
-              <div className='dash-icon'>
-                <RxClock color='white' fontSize={50}/>
-              </div>
-              <div className='dash-icon-text'>
-                <p>Time Taken</p>
-                <div>
-                    <AiOutlineArrowUp/>
-                      02: 14: 39
-                </div>
-              </div>
-            </div>
+                  </div>
+                )}
+          <div className='sided'>
+            <div className='side-head'>
+                <h4 onClick={()=> navigate('/dashboard')}>
+                Dashboard
+                </h4>
+                <h2>Albert Weed</h2>
           </div>
-
-          <div className='todo'>
-            <div className='todo-wrap'>
-              <div className='inputed-holder'>
-                <input 
-                  ref={inputRef} 
-                  placeholder='Add new Appointment...' 
-                        />
-                <button 
-                className='plus-butt'
-                onClick={() => {
-                  handleClick() }}>+</button>
+          <div className='dash-txt'>
+            <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'  to="/" >
+              <AiFillHome color='grey' fontSize={20}/>  
+              <p className='dash-p'>  Home</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap' to='/profile' >
+               <BiUserCircle color='grey' fontSize={20}/><p className='dash-p'>   Your Profile</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap' to='/appointment'>
+               <BsJournalBookmarkFill color='grey'  fontSize={18}/><p  className='dash-p'>   Appointments and Schedule</p>
+              </NavLink>
+              <br/>
+              <NavLink  style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+               <BiBell  color='grey' fontSize={20}/>  <p className='dash-p'> Notifications</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+              <AiOutlineMessage color='grey'  fontSize={20}/>  <p className='dash-p'>  Messages</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+               <AiOutlineSetting color='grey'  fontSize={20}/> <p className='dash-p'> Settings</p>
+              </NavLink>
               </div>
               </div>
-              <Dash
-                    Todo={state}
-                    update={dispatch}/>
-          </div>
-        </div>
-      </div>
-
     </div>
   )
 }
 
-export default Appointment;
+export default Appointment

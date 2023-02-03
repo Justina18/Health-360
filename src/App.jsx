@@ -20,6 +20,8 @@ import Appointment from './Components/Dashboard/Appointment'
 import Dashboard from './Components/Dashboard/Dashboard'
 import Profile from './Components/Dashboard/Profile'
 import Homed from './Components/Homed.jsx/Homed'
+import UserDash from './Components/Dashboard/UserDash'
+// import UserUpload from './Components/Form/UserUpload'
 
 const App = () => {
   return (
@@ -46,6 +48,8 @@ const App = () => {
           <Route path='/about' element={ <About/> }/>
           <Route path='/more info' element={ <More/> }/>
           <Route path='/profile' element={ <Profile/> } />
+          <Route path='/user dashboard' element={ <UserDash/> } />'
+          {/* <Route path='/userInp' element={ <UserUpload/> } /> */}
         </Routes>
  
       </Router>

@@ -1,61 +1,7 @@
-// import React,{useState} from 'react'
-// import Calendar from 'react-calendar';
-// import 'react-calendar/dist/Calendar.css'
-// const Profile = () => {
-//   const [date, setDate] = useState(new Date());
-//   return (
-//     <div>
-//       <div>
-
-//       </div>
-
-//       <Calendar onChange={setDate} value={date} selectRange={true}/>
-//       <p>
-//         <span>Selected Date:</span>{' '}
-//         {date.toDateString()}
-//       </p>
-//         <div>
-//           <div>
-//             <img/>
-//           </div>
-//           <div className='pro-text'>
-//           <h4>
-//             Name
-//           </h4>
-//           Joseph Jonah
-//           </div>
-
-//           <div className='pro-text'>
-//           <h4>
-//             Email
-//           </h4>
-//           josephjonah@gmail.com
-//           </div>
-
-//           <div className='pro-text'>
-//           <h4>
-//             Phone
-//           </h4>
-//           2349754357890
-//           </div>
-
-//           <div className='pro-text'>
-//           <h4>
-//             Gender
-//           </h4>
-//           Male
-//           </div>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default Profile
-
-import './Dashboard.css'
+import './Profile.css'
 import React,{useState, useRef, useReducer} from 'react'
 import {BsJournalBookmarkFill} from 'react-icons/bs'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,NavLink } from 'react-router-dom';
 import {FiAlignJustify} from 'react-icons/fi';
 import {FaTimes} from 'react-icons/fa'
 import {AiFillHome,AiOutlineMessage,AiOutlineSetting} from 'react-icons/ai'
@@ -70,69 +16,157 @@ const Profile = () => {
     setToggle(!toggle) 
   setIsOpen(!isOpen)
   }
-  const FiAlignJustif = (<FiAlignJustify fontSize={25} color="#1B75BC" onClick={handleToggle} />)
+  const Justify = (<FiAlignJustify fontSize={25} color="#1B75BC" onClick={handleToggle} />)
   const FaTime = (<div>
       <FaTimes fontSize={25} color="#D9D9D9" onClick={handleToggle} />
                 </div>)
+
+const activeColorObject ={
+  color: "#1B75BC",
+  fontWeight: 700
+}
+
+const colorObject ={
+  color: "grey",
+}
+
   return (
     <div>
-      <div>
+      <div className='Profile'>
+      <div className='prof-head'>
+        <div className='prof-head-img-holder' >
+          <div className='half-head'>
+            <BiBell  color='#1B75BC' fontSize={20}/>
+            </div>
+            <img className='prof-head-img' src='/prof.png' onClick={()=> navigate('/')}/>
+        </div>
+        </div>
       <div className='Burger'>
-                    {toggle ? FiAlignJustif : FaTime}
-                </div>
+                    {toggle ? Justify : FaTime}
+      </div>
                 {isOpen && (
-                      <div className='sides'>
-                      <div>
-                          <h4>
-                          Dashboard
-                          </h4>
-                          <div className='dash-img-wrap'>
-                          <img className='dash-img' src='/profile.png'/>
-                          </div>
-                          <h2>Albert Weed</h2>
-                    </div>
-                    <nav>
-                    <div className='dash-txt'>
-                        <p  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</p>
-                        <hr className='dash-hr'/>
-                        <p  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
-                        <hr className='dash-hr'/>
-                        <p onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</p>
-                        <hr className='dash-hr'/>
-                        <p className='dash-p'> <BiBell fontSize={25}/> Notifications</p>
-                        <hr className='dash-hr'/>
-                        <p className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</p>
-                        <hr className='dash-hr'/>
-                        <p className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</p>
-                    </div>
-                    </nav>
-                  </div>
-                )}
-          <div className='side'>
-            <div className='side-head'>
-                <h4>
+                      <div className='siding'>
+                      <div className='side-head'>
+                <h4 onClick={()=> navigate('/dashboard')}>
                 Dashboard
                 </h4>
-                <div className='dash-img-wrap'>
-                <img className='dash-img' src='/profile.png'/>
-                </div>
                 <h2>Albert Weed</h2>
           </div>
-          <nav>
           <div className='dash-txt'>
-              <p  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</p>
-              <hr className='dash-hr'/>
-              <p  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
-              <hr className='dash-hr'/>
-              <p onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</p>
-              <hr className='dash-hr'/>
-              <p className='dash-p'> <BiBell fontSize={25}/> Notifications</p>
-              <hr className='dash-hr'/>
-              <p className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</p>
-              <hr className='dash-hr'/>
-              <p className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</p>
+            <div className='p-wrap' onClick={()=> navigate('/')}>
+              <AiFillHome color='grey' fontSize={20}/>  <p className='dash-p'>  Home</p>
+              </div>
+              <br/>
+              <div className='p-wrap' onClick={()=> navigate('/profile')} >
+               <BiUserCircle color='grey'  fontSize={20}/><p className='dash-p'>   Your Profile</p>
+              </div>
+              <br/>
+              <div className='p-wrap'onClick={()=> navigate('/appointment')}>
+               <BsJournalBookmarkFill color='grey'  fontSize={18}/><p  className='dash-p'>   Appointments and Schedule</p>
+              </div>
+              <br/>
+              <div className='p-wrap'>
+               <BiBell  color='grey' fontSize={20}/>  <p className='dash-p'> Notifications</p>
+              </div>
+              <br/>
+              <div className='p-wrap'>
+              <AiOutlineMessage color='grey'  fontSize={20}/>  <p className='dash-p'>  Messages</p>
+              </div>
+              <br/>
+              <div className='p-wrap'>
+               <AiOutlineSetting color='grey'  fontSize={20}/> <p className='dash-p'> Settings</p>
+              </div>
           </div>
-          </nav>
+                  </div>
+                )}
+          <div className='sided'>
+            <div className='side-head'>
+                <h4 onClick={()=> navigate('/dashboard')}>
+                Dashboard
+                </h4>
+                <h2>Albert Weed</h2>
+          </div>
+          <div className='dash-txt'>
+            <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'  to="/" >
+              <AiFillHome color='grey' fontSize={20}/>  
+              <p className='dash-p'>  Home</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap' to='/profile' >
+               <BiUserCircle color='grey' fontSize={20}/><p className='dash-p'>   Your Profile</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap' to='/appointment'>
+               <BsJournalBookmarkFill color='grey'  fontSize={18}/><p  className='dash-p'>   Appointments and Schedule</p>
+              </NavLink>
+              <br/>
+              <NavLink  style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+               <BiBell  color='grey' fontSize={20}/>  <p className='dash-p'> Notifications</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+              <AiOutlineMessage color='grey'  fontSize={20}/>  <p className='dash-p'>  Messages</p>
+              </NavLink>
+              <br/>
+              <NavLink style={({ isActive }) =>
+              isActive ? activeColorObject : colorObject} className='p-wrap'>
+               <AiOutlineSetting color='grey'  fontSize={20}/> <p className='dash-p'> Settings</p>
+              </NavLink>
+          </div>
+        </div>
+        <div className='Profile-wrap'>
+
+            <div className='Profile-wrap-head'>
+            <img className='pro-img' src='/profi.jpg'/>
+            <div className='pro-text'>
+               <h4>Ferdinand Anozie</h4>
+               <p className='pro-p'>Dietitian</p>
+              </div>
+            </div>
+
+            <div className='pRo'>
+              <div className='holder'>
+                <div>
+                  <h4 className='pro-p'>Name</h4>
+                  <p className='holder-wrap'>Albert Weed</p>
+                </div>
+
+                <div>
+                  <h4 className='pro-p'>Email</h4>
+                  <p className='holder-wrap'>albertweed@gmail.com</p>
+                </div>
+              </div>
+
+              <div className='holder'>
+                <div>
+                  <h4 className='pro-p'>Location</h4>
+                  <p className='holder-wrap'>Nigeria</p>
+                </div>
+
+                <div>
+                  <h4 className='pro-p'>Portal  Code</h4>
+                  <p className='holder-wrap'>2749583</p>
+                </div>
+              </div>
+
+              <div className='holder'>
+                <div>
+                  <h4 className='pro-p'>Phone</h4>
+                  <p className='holder-wrap'>+234906284095</p>
+                </div>
+
+                <div>
+                  <h4 className='pro-p'>About</h4>
+                  <p className='holder-wrap'>Donec rutrum congue ubjxws</p>
+                </div>
+              </div>
+            </div>
+            <button className='pro-butt'>Save Changes</button>
         </div>
       </div>
     </div>

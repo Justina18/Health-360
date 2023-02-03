@@ -1,8 +1,8 @@
 .prem{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     background: linear-gradient(to left, #2991E0, #1B75BC, #1765A1);
 }
 .prem-head{   
@@ -25,7 +25,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
 }
 .prem-h{
     margin-top: 60px;
@@ -36,7 +35,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #F5F5F5;
     border-radius: 12px;
     width: 250px;
     height: 375px;
