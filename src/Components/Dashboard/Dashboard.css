@@ -64,7 +64,7 @@
     align-items: center;
     width: 80%;
 }
-.dash-p{
+/* .dash-p{
     color: grey;
     font-size: medium;
     display: flex;
@@ -72,10 +72,10 @@
     align-items: center;
     cursor: pointer;
 }
-.dash-p:visited{
-  background-color: rebeccapurple;
-    color: #1B75BC;
-}
+.dash-p:active{
+  background-color: #1B75BC;
+    color: white;
+} */
 .dash-icon-text{
     display: flex;
     justify-content: center;

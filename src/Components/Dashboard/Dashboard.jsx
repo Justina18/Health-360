@@ -1,6 +1,6 @@
 import React,{useState, useRef, useReducer} from 'react'
 import {BsSuitHeartFill,BsJournalBookmarkFill} from 'react-icons/bs'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,NavLink } from 'react-router-dom';
 import {FiAlignJustify} from 'react-icons/fi';
 import {FaTimes} from 'react-icons/fa'
 import {AiFillHome,AiOutlineMessage,AiOutlineSetting} from 'react-icons/ai'
@@ -61,17 +61,17 @@ const Dashboard = () => {
                           <h2>Albert Weed</h2>
                     </div>
                     <div className='dash-txt'>
-                        <p  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</p>
+                        <NavLink to="/" className='dash-p'> <AiFillHome fontSize={25}/> Home</NavLink>
                         <hr className='dash-hr'/>
-                        <p  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
+                        <a  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</a>
                         <hr className='dash-hr'/>
-                        <p onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</p>
+                        <a onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</a>
                         <hr className='dash-hr'/>
-                        <p className='dash-p'> <BiBell fontSize={25}/> Notifications</p>
+                        <a className='dash-p'> <BiBell fontSize={25}/> Notifications</a>
                         <hr className='dash-hr'/>
-                        <p className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</p>
+                        <a className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</a>
                         <hr className='dash-hr'/>
-                        <p className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</p>
+                        <a className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</a>
                     </div>
                   </div>
                 )}
@@ -86,17 +86,17 @@ const Dashboard = () => {
                 <h2>Albert Weed</h2>
           </div>
           <div className='dash-txt'>
-              <p  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</p>
+              <a  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</a>
               <hr className='dash-hr'/>
-              <p  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
+              <a  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</a>
               <hr className='dash-hr'/>
-              <p onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</p>
+              <a onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</a>
               <hr className='dash-hr'/>
-              <p className='dash-p'> <BiBell fontSize={25}/> Notifications</p>
+              <a className='dash-p'> <BiBell fontSize={25}/> Notifications</a>
               <hr className='dash-hr'/>
-              <p className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</p>
+              <a className='dash-p'> <AiOutlineMessage fontSize={25}/> Messages</a>
               <hr className='dash-hr'/>
-              <p className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</p>
+              <a className='dash-p'> <AiOutlineSetting fontSize={25}/>Settings</a>
           </div>
         </div>
 

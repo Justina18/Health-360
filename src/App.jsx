@@ -19,6 +19,7 @@ import More from './Components/More/More'
 import Appointment from './Components/Dashboard/Appointment'
 import Dashboard from './Components/Dashboard/Dashboard'
 import Profile from './Components/Dashboard/Profile'
+import Homed from './Components/Homed.jsx/Homed'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={ <Home/> } />
+          <Route path='/homed' element={ <Homed/>} />
           <Route path='/sign up' element={ <Inputs/> }/>
           <Route path='/upload' element={ <Upload/> }/>
           <Route path='/log in' element={ <LogIn/> }/>
