@@ -30,7 +30,7 @@ const Dash = ({ Todo, update }) => {
                 <div className="Card">
             <div className='Card-holder'>
                 <div className="texts">
-                    <h1>UPCOMING APPOINTMENTS</h1>
+                    <h2>UPCOMING APPOINTMENTS</h2>
                     <p>All upcoming appointments</p>
                     <div className="text1">
                         <p>{Total} Total, {Completed} Complete and {Pending} Pending</p>
@@ -54,7 +54,7 @@ const Dash = ({ Todo, update }) => {
         <div className='scroll'>
              {Todo?.map((item, index) => 
              <div key={index} className="Main_card">
-                 <div className='Main_cardtop' style={{ backgroundColor: item.checkers === true ? '#9EBCEA' : "#fff" }} >
+                 <div className='Main_cardtop' style={{ backgroundColor: item.checkers === true ? '#9EBCEA' : "#D9D9D9" }} >
                      <div className='wrap'>
                         <div className='top-parent'>
                             <input

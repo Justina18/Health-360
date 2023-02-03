@@ -9,6 +9,7 @@ import {SlUserFollow} from 'react-icons/sl'
 import {AiOutlineArrowUp} from 'react-icons/ai'
 import {RxClock} from 'react-icons/rx'
 import Dash from './Dash'
+import './Dashy'
 
 function reducer(todos, action) {
     switch (action.type) {
@@ -24,12 +25,11 @@ function reducer(todos, action) {
   function newTodo(inputRef) {
     return { id: Date.now(), todo: inputRef, checkers: false }
   }
- 
-  const handleClick = () => {
-    dispatch({ type: 'Add', payload: { name: inputRef.current.value } })
-  }
 
 const Dashboard = () => {
+    const handleClick = () => {
+    dispatch({ type: 'Add', payload: { name: inputRef.current.value } })
+                              }
     const navigate = useNavigate()
     const [toggle, setToggle] = useState(true);
     const [isOpen, setIsOpen] = useState(false)
@@ -63,7 +63,7 @@ const Dashboard = () => {
                     <div className='dash-txt'>
                         <p  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</p>
                         <hr className='dash-hr'/>
-                        <p className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
+                        <p  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
                         <hr className='dash-hr'/>
                         <p onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</p>
                         <hr className='dash-hr'/>
@@ -88,7 +88,7 @@ const Dashboard = () => {
           <div className='dash-txt'>
               <p  onClick={()=> navigate('/')}className='dash-p'> <AiFillHome fontSize={25}/> Home</p>
               <hr className='dash-hr'/>
-              <p className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
+              <p  onClick={()=> navigate('/profile')} className='dash-p'> <BiUserCircle fontSize={25}/> Your Profile</p>
               <hr className='dash-hr'/>
               <p onClick={()=> navigate('/appointment')} className='dash-p'> <BsJournalBookmarkFill fontSize={25}/> Appointments and Schedule</p>
               <hr className='dash-hr'/>
@@ -101,6 +101,7 @@ const Dashboard = () => {
         </div>
 
         <div className='dun'>
+            
             <div className='hey-wrap'>
                 <div className='heys'>
                     <h1>Hello Doc!<BsSuitHeartFill color='E22727' fontSize={25}/> </h1>
@@ -143,7 +144,7 @@ const Dashboard = () => {
                 <input 
                   ref={inputRef} 
                   placeholder='Add new Appointment...' 
-                        />
+                />
                 <button 
                 className='plus-butt'
                 onClick={() => {

@@ -18,6 +18,7 @@ import About from './Components/About/About'
 import More from './Components/More/More'
 import Appointment from './Components/Dashboard/Appointment'
 import Dashboard from './Components/Dashboard/Dashboard'
+import Profile from './Components/Dashboard/Profile'
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
           <Route path='premium' element={ <Prem/> }/>
           <Route path='/about' element={ <About/> }/>
           <Route path='/more info' element={ <More/> }/>
+          <Route path='/profile' element={ <Profile/> } />
         </Routes>
  
       </Router>
