@@ -28,7 +28,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #D9D9D9;
-    border: 1px solid #1B75BC;
+    border: 1px solid #006edc;
     height: 50px;
     width: 320px;
     margin-top: 15px;
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1B75BC;
+    background-color: #006edc;
     color: white;
     height: 40px;
     width: 120px;
@@ -57,7 +57,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #D9D9D9;
-    border: 1px solid #1B75BC;
+    border: 1px solid #006edc;
     height: 50px;
     width: 320px;
     margin-top: 15px;

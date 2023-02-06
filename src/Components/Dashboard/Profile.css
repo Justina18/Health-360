@@ -75,7 +75,7 @@
   width: 100%;
 }
 .dash-hr{
-    border-top: 1px solid #1B75BC;
+    border-top: 1px solid #006edc;
     width: 1005;
 }
 .pro-img{
@@ -88,7 +88,7 @@
     justify-content: center;
     align-items: center;
     width: 45%;
-    background-color: #1B75BC;
+    background-color: #006edc;
 }
 .dash-icon-wrap{
     display: flex;
@@ -96,7 +96,7 @@
     width: 210px;
     height: 90px;
     border-radius: 5px;
-    border: 1px solid #1B75BC;
+    border: 1px solid #006edc;
 }
 .dash-icon-wrap-holder{
     margin-bottom: 25px;
@@ -125,7 +125,7 @@
     cursor: pointer;
 }
 .dash-p:active{
-  background-color: #1B75BC;
+  background-color: #006edc;
     /* color: white; */
 }
 .dash-icon-text{

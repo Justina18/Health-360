@@ -17,11 +17,11 @@ const Choose = () => {
             </div>
             <div className='choose-buttons'>
             <button  className='choose-button-med' onClick={()=> navigate('/sign up')} >
-              <FaUserNurse fontSize={25} color="#1B75BC"/>
+              <FaUserNurse fontSize={25} color="#006edc"/>
             For medical personnel
             </button>
             <button onClick={()=> navigate('/user sign')} className='choose-button-user'>
-              <FaUserCircle fontSize={25} color="#1B75BC"  />
+              <FaUserCircle fontSize={25} color="#006edc"  />
             For Users
             </button>
             </div>

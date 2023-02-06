@@ -85,7 +85,7 @@
     border: 1px solid #1765A1;
     background: transparent;
   }
-  span {
+  .error-message {
     font-size: 0.7rem;
     font-weight: 600;
     color: rgb(197, 18, 18);
@@ -172,7 +172,7 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .inp:invalid[focus = "true"] ~ span{
+  .inp:invalid[focus = "true"] ~ .error-message{
     display: block;
   }
   .inp:invalid[focus = "true"] {

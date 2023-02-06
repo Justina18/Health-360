@@ -19,7 +19,7 @@
 }
 .head-links{
     margin: 10px;
-    color: #1B75BC;
+    color: #006edc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,9 +30,9 @@
 }
 .head-log-button{
     background: transparent;
-    border: 2px solid #1B75BC;
+    border: 2px solid #006edc;
     border-radius: 8px;
-    color: #1B75BC;
+    color: #006edc;
     width: 70px;
     margin-right: 10px;
     font-size: small;
@@ -40,7 +40,7 @@
     height: 32px;
 }
 .head-sign-button{
-    background:  #1B75BC;
+    background:  #006edc;
     border: none;
     color: white;
     border-radius: 8px;
@@ -54,7 +54,7 @@
   width: 100%;
   height: 2px;
   margin: 2px;
-  border-top: 2px solid #1B75BC;
+  border-top: 2px solid #006edc;
 }
 .head-link{
   display: none;

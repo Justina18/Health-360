@@ -37,7 +37,7 @@ const handleToggle = () => { setToggle(!toggle) }
             type={showPassword ? "text" : "password"} 
                     {toggle ? openEye : closedEye} */}
           
-        <span>{props.errMsg}</span>
+        <span className='error-message'>{props.errMsg}</span>
     </div>
   )
 }

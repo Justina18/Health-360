@@ -17,7 +17,7 @@
       flex-wrap: wrap;
 }
 .are-img-wrap{
-    background: #1B75BC;
+    background: #006edc;
     width: 454px;
     height: 357px;
     margin: 20px;
@@ -46,7 +46,7 @@ border: none;
 outline: none;
 font-size: large;
 font-weight: 600;
-color: #1B75BC;
+color: #006edc;
 margin-top: 10px;
 margin-bottom: 10px;
 }

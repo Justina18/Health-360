@@ -12,6 +12,9 @@
     height: 100%;
 
 }
+.home-text{
+   margin-right: 40px;
+}
 .Home-h1{
     font-weight: 800;
     margin: 10px;
@@ -19,7 +22,7 @@
 }
 .home-b{
     font-weight: 800;
-    color: #1B75BC; 
+    color: #006edc; 
 }
 .home-p{
     font-weight: 500;
@@ -40,7 +43,7 @@ outline: none;
 border: none;
 width: 110px;
 height: 45px;
-background: #1B75BC;
+background: #006edc;
 border-radius: 10px;
 }
 .home-prem-button{
@@ -100,7 +103,7 @@ margin-left: 40px;
 .land-foot{
     height:90px;
     width: 1327px;
-    background: #1B75BC;
+    background: #006edc;
 }
 @media screen and (max-width: 750px) {
     .land-img-wrap{
