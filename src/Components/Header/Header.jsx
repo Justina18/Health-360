@@ -22,7 +22,7 @@ const Header = () => {
     <div className='Header'>
         <div className='Head-wrap'>
             <div>
-                <img onClick={()=> navigate('/')} className='head-img' src='/head-log.jpeg' />
+                <img onClick={()=> navigate('/')} className='head-img' src='/Morest.png' />
              </div>
               {isOpen && (
              <div className='hid'>

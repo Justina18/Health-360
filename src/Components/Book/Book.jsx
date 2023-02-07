@@ -23,7 +23,7 @@ const Book = () => {
   return (
     <div  className='book'>
        <div className='head-img-wrap' >
-                <img onClick={()=> navigate('/')} className='head-img' src='/head-log.jpeg' />
+                <img onClick={()=> navigate('/')} className='head-img' src='/Morest.png' />
              </div>
       <div className='book-wrap'>
        

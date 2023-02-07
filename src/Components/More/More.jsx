@@ -10,7 +10,7 @@ const More = () => {
   return (
     <div className='More'>
       <div className='more-head'>
-        <div className='more-head-img-holder' ><img className='more-head-img' src='/head-log.jpeg'  onClick={()=> navigate('/')}/></div>
+        <div className='more-head-img-holder' ><img className='more-head-img' src='/Morest.png'  onClick={()=> navigate('/')}/></div>
         </div>
       <div className='More-wrap'>
         <div className='More-img-wrap' >

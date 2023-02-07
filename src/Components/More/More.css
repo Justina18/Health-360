@@ -21,14 +21,14 @@
      justify-content: flex-start;
  }
  .more-head-img{
-     width: 90px;
-     height: 70px;
+     width: 70px;
+     height: 65px;
      cursor: pointer;
      margin: 10px;
      margin-top: 20px
  }
 .More-h2{
-    color: #1B75BC;
+    color: #006edc;
     margin-left: 4px;
 }
 .More-p{
@@ -64,7 +64,7 @@
     color: white;
     font-size: medium;
     border: none;
-    background-color: #1B75BC;
+    background-color: #006edc;
 }
 @media screen and (max-width: 760px) {
     .More-img-wrap{
