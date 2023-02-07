@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './Book.css'
 
 
-const time = ['08:00','09:00','10:00','14:00','15:00']
+const time = ['08:00','09:00','10:00','14:00','15:00', '19:00', '21:00']
 const Time = (props) => {
     const [event, setEvent] = useState(null)
     const [info, setInfo] = useState(false)

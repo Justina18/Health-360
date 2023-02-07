@@ -51,9 +51,7 @@ margin-top: 10px;
 margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
-    .Are{
-        height: 80vh;
-    }
+
     .are-img-wrap{
         width: 300px;
         height: 291px
